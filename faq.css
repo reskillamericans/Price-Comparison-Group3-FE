@@ -1,0 +1,143 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+    background: rgba(255, 146, 24, 0.1);
+    margin: 0;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5% 0;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+
+.main-nav {
+    width: 40%;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.main-nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav ul li:hover .link-dot {
+    visibility: initial;
+}
+
+.main-nav ul li a, .login-signup button {
+    letter-spacing: .1em;
+    color: #797474;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    color: #FF9218;
+}
+
+.link-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF9218;
+    margin-top: 8px;
+    visibility: hidden;
+}
+
+.login-signup button {
+    font-size: 16px;
+    margin: 0 15px 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.login-signup button:nth-of-type(1) {
+    background: none;
+    border: none;
+}
+
+.login-signup button:nth-of-type(1):hover {
+    color: #FF9218;
+}
+
+.login-signup button:nth-of-type(2) {
+    background: #FF9218;
+    border: 1px solid #FF9218;
+    color: #F9F9F9;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+
+.login-signup button:nth-of-type(2):hover {
+    background: #F9F9F9;
+    /* border: 1px solid ; */
+    color: #FF9218;
+}
+
+.pattern {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.btm-pattern {
+    position: absolute;
+    bottom: 0;
+}
+
+.top-pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq-content {
+    width: 70%;
+    margin: auto;
+}
+
+.faq-title {
+    font-size: 45px;
+    text-align: center;
+}
+
+.faq-item * {
+    background: #FFF7F1;
+    padding: 8px;
+    line-height: 2.3rem;
+    margin: 10px 0;
+}
+
+.faq-item h3 {
+    font-size: 2.3rem;
+    line-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-item p {
+    font-size: 1.3rem;
+}
+
+.arr-btn {
+    transform: scaleY(-1);
+}
+
+.answer {
+    display: none;
+}
+
