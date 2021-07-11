@@ -1,8 +1,79 @@
+:root {
+    --debug: 1px solid red;
+}
+
 body {
     font-family: 'Lato', sans-serif !important;
     background: rgba(255, 146, 24, 0.1);
     margin: 0;
 }
+
+ /* Hamburger Icon  */
+ #open {
+     display: none;
+ }
+
+/* Mobile Header  */
+.mobile-header {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background: #FFF7F1;
+    top: 0;
+    display: none;
+}
+
+.mobile-header-exit {
+    position: absolute;
+    font-size: 2.5rem;
+    color: #ff9218;
+    right: 3%;
+    top: 1%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.mobile-nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 90%;
+}
+
+.mobile-ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+.mobile-ul li:hover {
+    background: #ff9218;
+}
+
+.mobile-ul li:hover a {
+    color: #fff;
+}
+
+.mobile-ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff9218;
+}
+/* End Mobile Header  */
 
 .top-bar {
     display: flex;
@@ -11,13 +82,13 @@ body {
     padding: 2% 5% 0;
     font-weight: 700 !important;
     font-size: 16px !important;
+    border: var(--debug);
 }
 
 .logo {
     border: 1px solid red;
     margin: 0;
     padding: 0;
-    /* height: 150px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +102,6 @@ body {
 .navBar{
     display: flex;
     flex-flow: column;
-    /* height : 210px; */
     align-items:center;
 }
 
@@ -53,14 +123,15 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 30px 10%;
+    padding: 30px 0;
     margin: 0px;
-    width: 1420px;
+    width: 100%;
     height: 100px;
     background: url(images/faq_page/pricedoutlogo.svg);
     background-repeat: no-repeat;
     background-position-x: 10px;
     background-position-y: -35px;
+    /* border: var(--debug); */
 }
 
 header::before {
@@ -146,33 +217,39 @@ padding: 0px 20px;
     display: none;
 }
 
+/* Mobile Styles  */
 @media all and (max-width: 600px) {
     body {
-        /* border: 1px solid red; */
         padding: 0;
         margin: 0;
-        /* width: 100%; */
     }
+
     header {
-        flex-direction: column;
-        width: 100%;
-        height: 25vh;
-        padding: 0;
-        margin-bottom: 60px;
-        background-position-y: -50px;
-        background-position-x: 35px;
-        background-size: auto;
-        /* border: 1px solid red; */
+       display: none;
+    }
+
+    /* Hamburger Icon  */
+    #open {
+        display: block;
+        font-size: 1.5rem;
+        color: #FF9218;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 2.5% 3.5% 0;
+        cursor: pointer;
+    }
+
+    .mobile-header {
+        display: none;
     }
 
     .navBar {
-        /* border: 1px solid red; */
         width: 100%;
         padding: 0;
     }
 
     .navLinks {
-        /* border: 1px solid red; */
         width: 100%;
         display: flex;
         align-items: center;
@@ -181,13 +258,11 @@ padding: 0px 20px;
     }
 
     .navLinks li {
-        /* border: 1px solid red; */
         padding: 0;
         margin: 0 8px;
     }
 
     .navLinks li a {
-        /* border: 1px solid red; */
         font-size: 1rem;
         width: 100%;
         margin: 0;

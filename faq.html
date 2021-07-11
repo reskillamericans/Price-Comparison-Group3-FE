@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
+    <!-- FontAwesome  -->
+    <script src="https://kit.fontawesome.com/fee361ecdf.js" crossorigin="anonymous"></script>
+
     <title>RandomShop.com | FAQ</title>
 </head>
 <body>
@@ -21,6 +24,29 @@
         <img src="images/essien/top-pattern.svg" alt="half circle pattern" class="top-pattern">
     </div>
     <!-- Top Bar Section -->
+
+    <!-- Mobile Header  -->
+    <div id="mobile-menu" class="mobile-header">
+        <div id="exit" class="mobile-header-exit">+</div>
+        <nav class="mobile-nav">
+            <ul class="mobile-ul">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/About.html">About Us</a></li>
+                <li><a href="/Product.html">Products</a></li>
+                <li><a href="/faq.html">FAQS</a></li>
+                <li><a href="/Contact.html">Contact Us</a></li>
+                <li><a href="/Signup.html">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Mobile Header  -->
+
+    <!-- Hamburger Icon  -->
+    <div id="open">
+        <i class="fas fa-bars"></i>
+    </div>
+    <!-- End Hamburger Icon  -->
+
     <header>
         <nav class = "navBar">
             <ul class = "navLinks">
@@ -57,7 +83,7 @@
                 <p class="answer" id="ans3">Priced Out works diligently to update its website within 1 hour of product price changes, including price changes made by Amazon and E-bay sellers.</p>
             </div>
         </article> 
-    </section>}
+    </section>
     <!-- End FAQ Section -->
 
     <script type="text/javascript">
@@ -151,6 +177,19 @@
                 arrBtn3.style.transform = "scaleY(-1)";
             }
         }
+
+        // Mobile Menu Script 
+        const exit = document.getElementById('exit');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const open = document.getElementById('open');
+
+        open.addEventListener('click', function(){
+            mobileMenu.style.display = "block";
+        })
+
+        exit.addEventListener('click', function(){
+            mobileMenu.style.display = "none";
+        });
     </script>
 </body>
 </html>
