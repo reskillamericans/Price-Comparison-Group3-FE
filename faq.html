@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faq.css">
+
+    <link rel="shortcut icon" href="/images/faq_page/pricedoutlogo.svg" type="image/svg">
+
+    <!-- Google Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <title>RandomShop.com | FAQ</title>
+</head>
+<body>
+    <div class="pattern">
+        <img src="images/essien/btm-pattern.svg" alt="half circle pattern" class="btm-pattern">
+        <img src="images/essien/top-pattern.svg" alt="half circle pattern" class="top-pattern">
+    </div>
+    <!-- Top Bar Section -->
+    <header>
+        <nav class = "navBar">
+            <ul class = "navLinks">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/About.html">About Us</a></li>
+                <li><a href="/Product.html">Products</a></li>
+                <li><a href="/faq.html">FAQS</a></li>
+                <li><a href="/Contact.html">Contact Us</a></li>
+                <li><a href="/Signup.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Top Bar Section -->
+
+    <!-- FAQ Section -->
+    <section class="faq-content">
+        <h1 class="faq-title">Frequently Asked Questions</h1> 
+        <article class="faq-item-contain">
+            <div class="faq-item">
+                <h3>How do you use Priced Out?<span class="arr-btn" id="arrbtn0" onclick="showAnswer(); toggleArrow();"><img src="images/essien/arrow.svg" alt="arrow" class="arr-svg"></span></h3>
+                <p class="answer" id="ans0">First, get started with Priced Out by signing up on its homepage or simply click on a product card on the homepage to immediately compare prices of that product between 
+                    Amazon and E-bay. Signing up gives you the unique advantage of sharing your favorite products with family and friends on social media to comment on.</p>
+            </div>
+            <div class="faq-item">
+                <h3>When will the featured products update/change on this site?<span class="arr-btn" id="arrbtn1" onclick="showAnswer1(); toggleArrow1();"><img src="images/essien/arrow.svg" alt="arrow" class="arr-svg"></span></h3>
+                <p class="answer" id="ans1">The Priced Out website will update/change its featured products once every month.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does the price comparison website give accurate rates based on Amazon and eBay listed pricing?<span class="arr-btn" id="arrbtn2" onclick="showAnswer2(); toggleArrow2();"><img src="images/essien/arrow.svg" alt="arrow" class="arr-svg"></span></h3>
+                <p class="answer" id="ans2">Yes, the Priced Out website will display accurate rates, and its listed products are consistently price checked.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Will pricing automatically update if the Amazon or ebay seller makes a product price change?<span class="arr-btn" id="arrbtn3" onclick="showAnswer3(); toggleArrow3();"><img src="images/essien/arrow.svg" alt="arrow" class="arr-svg"></span></h3>
+                <p class="answer" id="ans3">Priced Out works diligently to update its website within 1 hour of product price changes, including price changes made by Amazon and E-bay sellers.</p>
+            </div>
+        </article> 
+    </section>}
+    <!-- End FAQ Section -->
+
+    <script type="text/javascript">
+        // Grab arrow button by class name, assign to var
+        const arrBtn0 = document.getElementById('arrbtn0');
+        const arrBtn1 = document.getElementById('arrbtn1');
+        const arrBtn2 = document.getElementById('arrbtn2');
+        const arrBtn3 = document.getElementById('arrbtn3');
+        // Grab paragraphs by class name, assign to var
+        const answer0 = document.getElementById('ans0');
+        const answer1 = document.getElementById('ans1');
+        const answer2 = document.getElementById('ans2');
+        const answer3 = document.getElementById('ans3');
+
+        function showAnswer(){
+                // If paragraph style class .show-para is not set
+                if(answer0.style.display === "none"){
+                    // set answer to initial
+                    answer0.style.display = "block";
+                // Else
+                } else {
+                    // remove .show-para class
+                    answer0.style.display = "none";
+                }
+        }
+
+        function toggleArrow(){
+            if(arrBtn0.style.transform === "scaleY(-1)"){
+                arrBtn0.style.transform = "scaleY(1)";
+            } else {
+                arrBtn0.style.transform = "scaleY(-1)";
+            }
+        }
+
+        function showAnswer1(){
+                // If paragraph style class .show-para is not set
+                if(answer1.style.display === "none"){
+                    // set answer to initial
+                    answer1.style.display = "block";
+                // Else
+                } else {
+                    // remove .show-para class
+                    answer1.style.display = "none";
+                }
+        }
+
+        function toggleArrow1(){
+            if(arrBtn1.style.transform === "scaleY(-1)"){
+                arrBtn1.style.transform = "scaleY(1)";
+            } else {
+                arrBtn1.style.transform = "scaleY(-1)";
+            }
+        }
+
+        function showAnswer2(){
+                // If paragraph style class .show-para is not set
+                if(answer2.style.display === "none"){
+                    // set answer to initial
+                    answer2.style.display = "block";
+                // Else
+                } else {
+                    // remove .show-para class
+                    answer2.style.display = "none";
+                }
+        }
+
+        function toggleArrow2(){
+            if(arrBtn2.style.transform === "scaleY(-1)"){
+                arrBtn2.style.transform = "scaleY(1)";
+            } else {
+                arrBtn2.style.transform = "scaleY(-1)";
+            }
+        }
+
+        function showAnswer3(){
+                // If paragraph style class .show-para is not set
+                if(answer3.style.display === "none"){
+                    // set answer to initial
+                    answer3.style.display = "block";
+                // Else
+                } else {
+                    // remove .show-para class
+                    answer3.style.display = "none";
+                }
+        }
+
+        function toggleArrow3(){
+            if(arrBtn3.style.transform === "scaleY(-1)"){
+                arrBtn3.style.transform = "scaleY(1)";
+            } else {
+                arrBtn3.style.transform = "scaleY(-1)";
+            }
+        }
+    </script>
+</body>
+</html>
