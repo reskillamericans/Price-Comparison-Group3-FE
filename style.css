@@ -1,1 +1,275 @@
 /* Write the Landing page styling here */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E6DBCE;
+}
+
+
+.navBar{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.navLinks li a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #2D3047;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+.navLinks li a:hover{
+    color: #FF9218;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+    width: 1420px;
+    height: 200px;
+    background: url(./images/landingpage-images/PricedOut2.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: -100px;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+main {
+    margin: 4em auto;
+    margin-top: 10%;
+    width: 80%;
+    background: url("/images/landingpage-images/shopper.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px 600px;
+    background-position-x: 270px;
+}
+
+a {
+    font-size: 15px;
+    color: inherit;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: orange;
+}
+
+a+a {
+    padding: 0em 1em 1em;
+}
+
+.stripes {
+    position: absolute;
+    width: 2%;
+    top: 0;
+    display: flex;
+}
+
+.stripes img {
+    margin: 0;
+    padding: 0;
+    height: 150px;
+}
+
+main h1 {
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #181925;
+    font-weight: 300;
+}
+
+.bold {
+    color: #FF9218;
+    font-weight: bold;
+}
+
+.text p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 4px; 
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.start {
+    background-color: #FF9218;
+    color: white;
+    border: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.items {
+    color: #FF9218;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.items img {
+    width: 90px;
+    height: 90px;
+    justify-items: center;
+}
+
+.box {
+    background-color: white;
+    width: 160px;
+    border-radius: 10px;
+    height: 140px;
+    position: center;
+    margin: 10px;
+    box-shadow: 0px 3px #B8AFA5;
+    margin-bottom: 25px;
+}
+
+figure {
+    margin: 0;
+    margin-top: 20px;
+}
+
+figcaption {
+    align-items: center;
+    margin-top: 30px;
+}
+
+.caption {
+    display: block;
+    text-align: center;   
+    font-weight: bolder;
+    font-size: 11px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #797474;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-top: 10%;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+@media all and (max-width: 650px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    header {
+        flex-direction: column;
+        width: 600px;
+        height: 180px;
+        padding: 0;
+        margin-bottom: 60px;
+        background-position-x: 5px;
+        background-position-y: -75px;
+        background-size: 60%;
+    }
+    
+    .navBar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        margin-right: 38%;
+    }
+
+    .navLinks li {
+        padding: 0;
+        margin: 0 8px;
+    }
+
+    .navLinks li a {
+        font-size: 11px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .stripes img {
+        height: 100px;
+    }
+
+    main {
+        flex-direction: column;
+        background-size: 90%;
+        background-position-y: 140px;
+        background-position-x: 0px;
+    }
+
+    main h1 {
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .text p {
+        margin-top: 230px;
+        text-align: center;
+    }
+
+    .start {
+        width: 225px;
+        margin-left: 10%;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        font-size: 15px;
+    }
+
+}
