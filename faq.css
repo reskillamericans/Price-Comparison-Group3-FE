@@ -1,0 +1,284 @@
+:root {
+    --debug: 1px solid red;
+}
+
+body {
+    font-family: 'Lato', sans-serif !important;
+    background: rgba(255, 146, 24, 0.1);
+    margin: 0;
+}
+
+ /* Hamburger Icon  */
+ #open {
+     display: none;
+ }
+
+/* Mobile Header  */
+.mobile-header {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background: #FFF7F1;
+    top: 0;
+    display: none;
+}
+
+.mobile-header-exit {
+    position: absolute;
+    font-size: 2.5rem;
+    color: #ff9218;
+    right: 3%;
+    top: 1%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.mobile-nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 90%;
+}
+
+.mobile-ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+.mobile-ul li:hover {
+    background: #ff9218;
+}
+
+.mobile-ul li:hover a {
+    color: #fff;
+}
+
+.mobile-ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff9218;
+}
+/* End Mobile Header  */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5% 0;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    border: var(--debug);
+}
+
+.logo {
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    border: 1px solid red;
+}
+
+.navBar{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+}
+
+.navLinks li a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #2D3047;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+.navLinks li a:hover {
+    color: #FF9218;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px 0;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(images/faq_page/pricedoutlogo.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: -35px;
+    /* border: var(--debug); */
+}
+
+header::before {
+    content: "";
+    background-image: linear-gradient(#FF9218, #F9F9F9);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 11%;
+}
+
+.navLinks li {
+display: inline-block;
+padding: 0px 20px;
+}
+
+.link-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF9218;
+    margin-top: 8px;
+    visibility: hidden;
+}
+
+.pattern {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.btm-pattern {
+    position: absolute;
+    bottom: 0;
+}
+
+.top-pattern {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq-content {
+    width: 70%;
+    margin: auto;
+}
+
+.faq-title {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.faq-item * {
+    background: #FFF7F1;
+    padding: 8px;
+    line-height: 2.3rem;
+    margin: 10px 0;
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-item p {
+    font-size: 1rem;
+}
+
+.arr-btn {
+    transform: scaleY(-1);
+}
+
+.answer {
+    display: none;
+}
+
+/* Mobile Styles  */
+@media all and (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+       display: none;
+    }
+
+    /* Hamburger Icon  */
+    #open {
+        display: block;
+        font-size: 1.5rem;
+        color: #FF9218;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 2.5% 3.5% 0;
+        cursor: pointer;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .navBar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .navLinks li {
+        padding: 0;
+        margin: 0 8px;
+    }
+
+    .navLinks li a {
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .faq-title {
+        font-size: 1.7rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .faq-item p {
+        font-size: .7rem;
+        line-height: 1.5rem;
+    }
+}
