@@ -2,10 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #E6DBCE;
+    position: relative;
 }
 
 
@@ -49,7 +54,6 @@ header{
 
 main {
     margin: 4em auto;
-    margin-top: 10%;
     width: 80%;
     background: url("/images/landingpage-images/shopper.svg");
     background-repeat: no-repeat;
@@ -202,13 +206,13 @@ footer a:hover {
 
     header {
         flex-direction: column;
-        width: 600px;
-        height: 180px;
+        width: 560px;
+        height: 145px;
         padding: 0;
         margin-bottom: 60px;
-        background-position-x: 5px;
-        background-position-y: -75px;
-        background-size: 60%;
+        background-position-x: 40px;
+        background-position-y: -55px;
+        background-size: 50%;
     }
     
     .navBar {
@@ -223,7 +227,7 @@ footer a:hover {
         justify-content: center;
         padding: 0;
         margin: 0;
-        margin-right: 38%;
+        margin-right: 35%;
     }
 
     .navLinks li {
@@ -246,6 +250,7 @@ footer a:hover {
         background-size: 90%;
         background-position-y: 140px;
         background-position-x: 0px;
+        width: 90%;
     }
 
     main h1 {
@@ -262,6 +267,18 @@ footer a:hover {
     .start {
         width: 225px;
         margin-left: 10%;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .box {
+        width: 140px;
+    }
+
+    .items img {
+        width: 125px;
     }
 
     footer {
