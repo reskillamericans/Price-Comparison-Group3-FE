@@ -147,8 +147,8 @@ button:hover {
 }
 
 .items img {
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 110px;
     justify-items: center;
 }
 
@@ -160,7 +160,7 @@ button:hover {
     position: center;
     margin: 10px;
     box-shadow: 0px 3px #B8AFA5;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 figure {
@@ -170,7 +170,7 @@ figure {
 
 figcaption {
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .caption {
@@ -277,8 +277,14 @@ footer a:hover {
         width: 140px;
     }
 
+    .caption {
+        font-size: 15px;
+        margin-top: 23px;
+    }
+
     .items img {
         width: 125px;
+        height: 95px;
     }
 
     footer {
