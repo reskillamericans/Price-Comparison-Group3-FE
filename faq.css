@@ -75,7 +75,7 @@ body {
 }
 /* End Mobile Header  */
 
-.top-bar {
+/* .top-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,10 +83,10 @@ body {
     font-weight: 700 !important;
     font-size: 16px !important;
     border: var(--debug);
-}
+} */
 
 .logo {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -95,14 +95,18 @@ body {
     justify-content: center;
 }
 
-.logo img {
+/* .logo img {
     border: 1px solid red;
-}
+} */
 
 .navBar{
     display: flex;
     flex-flow: column;
     align-items:center;
+    position: relative;
+    right: 14.8%;
+    top: 18%;
+    /* border: var(--debug); */
 }
 
 .navLinks li a {
@@ -122,7 +126,8 @@ header {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
+    align-self:center;
     padding: 30px 0;
     margin: 0px;
     width: 100%;
