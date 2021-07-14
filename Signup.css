@@ -12,6 +12,7 @@ body{
 
 }
 
+/* Header and nav bar style*/
 .navBar{
     display: flex;
     flex-flow: column;
@@ -87,14 +88,21 @@ padding: 0px 20px;
 
 .card{
    width: 50% ;
-   border-right: solid grey;
+   border-right: 1px solid grey;
    font-size: 16px;
 }
 
 .info{
     margin-right: 0;
+
  }
 
+ .terms{
+    color: hsl(32, 96%, 52%);
+    text-decoration: none;
+ }
+
+ /* input feilds stylying*/
  .floating1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,7 +114,7 @@ padding: 0px 20px;
  .flt{
      margin-right: 3rem;
      
-     
+
  }
 
 
@@ -115,6 +123,7 @@ padding: 0px 20px;
     background-color:#f4f0ed ;
     transition: all .3s;
     margin-right: 1rem;
+   
 }
 
  .floating_input{
