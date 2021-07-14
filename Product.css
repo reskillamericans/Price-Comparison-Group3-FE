@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #F9F9F9;
+    padding-bottom: 100px;
+
+    background-image: 
+    url(images/product_images/EllipseTopLeft.svg),  
+    url(images/product_images/EllipseBottom.svg);
+    background-position: 
+        top 180px right 130px, 
+        bottom left 200px;
+    background-repeat: no-repeat;
+}
+
+.navBar{ 
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+}
+
+.navLinks li a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #2D3047;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+} 
+
+.navLinks li a:hover{
+    color: #FF9218;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin: 0px;
+    width: 1500px; 
+    height: 200px;   
+
+    background: url(images/product_images/PricedOut.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: -100px;
+} 
+
+header::before{
+    content: "";
+    background-image: linear-gradient(#FF9218, #F9F9F9);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 11%;
+}
+
+.navLinks li{
+display: inline-block;
+padding: 0px 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+  .container, .rowHeaders{
+      display: flex;
+      flex-direction: column; 
+      flex-wrap: wrap;
+  }
+
+.iphone{
+    width: 172px;
+    height: 124px;
+}
+
+.sneakers{
+    width: 190px;
+    height: 135px;
+}
+
+.furniture{
+    width: 198px;
+    height: 118px;
+}
+
+.tatcha{
+    width: 172px;
+    height: 170px;
+}
+
+.tuxedo{
+    width: 98.57;
+    height: 183.28px;
+}
+
+.jeanJacket{
+    width: 141px;
+    height: 141px;
+}
+
+.duffle{
+    width: 159px;
+    height: 127px;
+}
+
+.nintendo{
+    width: 166px;
+    height: 100px;
+}
+
+.funkoPop{
+    width: 107px;
+    height: 151px;
+}
+
+.nikon{
+    width: 192.16px;
+    height: 127.8px;
+}
+
+.rowHeaders h4, .productName{
+    color: #FF9218;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.amazonPrice, .condition, .style, .ebayPrices{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    justify-content: center;
+    align-content: center;
+}
+
+.ebayPrices{
+    color: #EC1616;
+}
+.productImage  {
+
+    width: 212.07px;
+    height: 194.18px;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.iphone, .sneakers, .furniture,.jeanJacket,.duffle,.nintendo,.nikon{
+    margin-top: 30px;
+
+}
+
+
+a{
+    margin: 26.6px 0px;
+}
+
+.emptySpace{
+    width: 212.07px;
+    height: 273px;
+}
+
+.star{
+    background-image: url(images/product_images/Star.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/* Hamburger Icon  */
+#open {
+    display: none;
+}
+
+/* Mobile Header  */
+.mobile-header {
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   z-index: 99;
+   background: #FFF7F1;
+   top: 0;
+   display: none;
+}
+
+.mobile-header-exit {
+   position: absolute;
+   font-size: 2.5rem;
+   color: #ff9218;
+   right: 3%;
+   top: 1%;
+   transform: rotate(45deg);
+   cursor: pointer;
+}
+
+.mobile-nav {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.mobile-ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 55vh;
+   width: 90%;
+}
+
+.mobile-ul li {
+   width: 100%;
+   text-align: center;
+   padding: 15px 0;
+   border-radius: 8px;
+}
+
+.mobile-ul li:hover {
+   background: #ff9218;
+}
+
+.mobile-ul li:hover a {
+   color: #fff;
+}
+
+.mobile-ul li a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #ff9218;
+}
+/* End Mobile Header  */
+
+
+@media all and (min-width: 600px) {
+    .mobile-topbar, .mobile-header{
+        display: none;
+    }
+}
+
+    
+    
+@media all and (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: none;
+    }
+
+    header {
+        /* flex-direction: column;
+        width: 500px;
+        height: 25vh;
+        padding: 0;
+        margin-bottom: 60px;
+        background-position-x: 40px;
+        background-position-y: -100px;
+        background-size: auto; */
+
+        display: none;
+    }
+
+    .mobile-topbar {
+        /* border: var(--debug); */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Mobile Logo  */
+    .mobile-logo {
+        /* border: var(--debug); */
+        display: block;
+        width: 70%;
+        margin: -6% 0 -20%;
+        position: relative;
+        left: 15%;
+    }
+
+    /* Hamburger Icon  */
+    #open {
+        display: block;
+        font-size: 1.5rem;
+        color: #FF9218;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 2.5% 3.5% 0;
+        cursor: pointer;
+    }
+
+    /* .mobile-header {
+        display: none;
+    } */
+
+    nav{
+        position: absolute;
+        top: 150px;
+        right: 0px;
+    }
+
+    .navBar {
+        width: 100%;
+        padding: 0;
+    }
+    .navLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .navLinks li {
+        padding: 0;
+        margin: 0 8px;
+    }
+    .navLinks li a {
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .table1{
+        position: fixed; 
+        margin-bottom: 0;
+        scroll-snap-type: mandatory;
+    }
+
+    .table2{
+        display: none;
+    }
+
+    .container{
+        margin-left: 200px;
+    }
+}
