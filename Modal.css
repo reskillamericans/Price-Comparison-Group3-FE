@@ -3,7 +3,6 @@
     --placeholderFontSize : 20px;
   }
 
-
 * {
     box-sizing: border-box;
     list-style: none;
@@ -22,7 +21,6 @@ body {
 .container {
     height: 100%;
 }
-
 
 header {
     display: flex;
@@ -386,10 +384,6 @@ textarea:focus, input:focus{
         color: black;
     }
     
-   /* .shift {
-        position: relative;
-        top: -12px;
-    }*/
     
     p {
         font-size: 11px;
