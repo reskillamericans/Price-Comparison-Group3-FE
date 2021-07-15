@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-size: 6%, 6%, 9%,9%;
     background-position: 76% 28%, 10.5% 79%, bottom left, bottom right;
+    font-family: sans-serif;
 
 }
 
@@ -42,7 +43,7 @@ header{
     background: url(images/register_images/PricedOut___1.svg);
     background-repeat: no-repeat;
     background-position-x: 10px;
-    background-position-y: -100px;
+    background-position-y: -120px;
 }
 header::before{
     content: "";
@@ -62,266 +63,267 @@ padding: 0px 20px;
  /* content styling*/
 
 .Main
-{
-    width: 100%;
-    height: 70%;
-    /* margin: auto; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-content{
-    height: 100%;
-    width: 80%;
-    background-color: white(122, 41, 41);
-    display: flex;
-    margin:auto;
-    
- }
-.rg{
-    text-align: center;
-    margin-bottom: 2em;
-
-}
-
-.card{
-   width: 50% ;
-   border-right: 1px solid grey;
-   font-size: 16px;
-}
-
-.info{
-    margin-right: 0;
-
- }
-
- .terms{
-    color: hsl(32, 96%, 52%);
-    text-decoration: none;
- }
-
- /* input feilds stylying*/
- .floating1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 1rem;
-    background-color:#f4f0ed ;
-    transition: .3s;
-    margin-right: 1em;
- }
- .flt{
-     margin-right: 3rem;
-     
-
- }
-
-
-.floating{
-    margin-bottom: 1rem;
-    background-color:#f4f0ed ;
-    transition: all .3s;
-    margin-right: 1rem;
-   
-}
-
- .floating_input{
-    background-color: #f4f0ed ;
-     box-shadow: none;
-     border:none;
-     border-bottom: 1px solid black;
-     width: 100% ;
-     padding-right: 1rem;
-     transition: all .5s;
- }
- #input_fname{
-     width: 100%;
- }
- #input_lname{
-     width: 100%;
-    
- }
- #input_password{
-     width: 85% ;
- }
- 
- .floating_input::placeholder{
-     color: transparent;
- }
-
-.floating_input:focus{
-    box-shadow: none;
-    outline: none;
-    border-color:#FF9218  ;
-}
- .floating_input:focus +.floating_label,
- .floating_input:not(:placeholder-shown) +.floating_label
  {
-     transform: translateY(-2.5rem) scale(.8)
+     width: 100%;
+     height: 70%;
+     /* margin: auto; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
  }
  
- .floating_label{
-     display: block;
-     transform: translateY(-1.25em);
-     transform-origin: 0 0;
-     transition:all .3;
-     opacity: 1;
+.main-content{
+     height: 100%;
+     width: 80%;
+     background-color: white(122, 41, 41);
+     display: flex;
+     margin:auto;
      
+  }
+.rg{
+     text-align: center;
+     margin-bottom: 2em;
+ 
  }
-
-.create{
-    margin-top: 4em;
-    margin-right: 3rem;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-    background-color:hsl(32, 96%, 52%);
-    width: 75%;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
+ 
+.card{
+    width: 50% ;
+    border-right: 1px solid grey;
+    font-size: 16px;
+ }
+ 
+.info{
+     margin-right: 0;
+ 
+  }
+ 
+.terms{
+     color: hsl(32, 96%, 52%);
+     text-decoration: none;
+  }
+ 
+  /* input feilds stylying*/
+.floating1{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin-bottom: 1rem;
+     background-color:#f4f0ed ;
+     transition: .3s;
+     margin-right: 1em;
+  }
+.flt{
+      margin-right: 3rem;
+      
+ 
+  }
+ 
+ 
+.floating{
+     margin-bottom: 1rem;
+     background-color:#f4f0ed ;
+     transition: all .3s;
+     margin-right: 1rem;
     
-
-}
-
-.social{
-    width: 40% ;
-    display: flex;
-    padding: 5% 4%;
-
-}
-.social-buttons button{
-    display: flex;
-    flex-direction: row;
-    margin:1em;
-    font-size: 14px;
-    font-weight: 400;
-    width: 350px;
-    padding: 5px;
-    border-radius: 6px;
-    border: solid 1px;
-    align-items: center;
-}
-    
-.social-buttons button:hover{
-    background: blue;
-    }
-
-.social-buttons img{
-    margin-right: 10px;
-   
-}
-.ggle{
-    text-indent: 0;
-    width: 15%;
-}
-.fb {
-    width: 16%;
-   
-}
-.appl {
-    color:black;
-    text-indent: 0;
-    width: 16%;
-}
-
-
-/*responsive*/
-
-@media all and (max-width: 600px) {
-    body {
-        /* border: 1px solid red; */
-        padding: 0;
-        margin: 0;
-        background-image:url(/images/register_images/Group\ 70.png), url(/images/register_images/Group\ 70.png),
-        url(/images/register_images/Group\ 81.png), url(/images/register_images/Group\ 82.png) ;
-        background-repeat: no-repeat;
-        background-size: 10%, 10%, 14%,14%;
-        background-position: 68% 16%, 11% 66%, bottom left, bottom right;
-   
-        /* width: 100%; */
-       }
-    .header1 {
-        flex-direction: column;
-        width: 100%;
-        height: 30vh;
-        padding: 0;
-        margin-bottom: 60px;
-        background-position-y: -90px;
-        background-position-x: 5px;
-        background-size: cover;
-        /* border: 1px solid red;  */
-        }
-    .navBar {
-        /* border: 1px solid red; */
-        width: 100%;
-        padding: 0;
+ }
+ 
+.floating_input{
+     background-color: #f4f0ed ;
+      box-shadow: none;
+      border:none;
+      border-bottom: 1px solid black;
+      width: 100% ;
+      padding-right: 1rem;
+      transition: all .5s;
+  }
+#input_fname{
+      width: 100%;
+  }
+#input_lname{
+      width: 100%;
      
-    }
-    .navLinks {
-        /* border: 1px solid red; */
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-    .navLinks li {
-        /* border: 1px solid red; */
-        padding: 0;
-        margin: 0 8px;
-        font-size: 14px;
-    }
-    .navLinks li a {
-        /* border: 1px solid red; */
-        font-size: 11px;
-        width: 100%;
-        margin: 0;
-    }
+  }
+#input_password{
+      width: 85% ;
+  }
+  
+.floating_input::placeholder{
+      color: transparent;
+  }
+ 
+.floating_input:focus{
+     box-shadow: none;
+     outline: none;
+     border-color:#FF9218  ;
+ }
+.floating_input:focus +.floating_label,
+.floating_input:not(:placeholder-shown) +.floating_label
+  {
+      transform: translateY(-2.5rem) scale(.8)
+  }
+  
+.floating_label{
+      display: block;
+      transform: translateY(-1.25em);
+      transform-origin: 0 0;
+      transition:all .3;
+      opacity: 1;
+      
+  }
+ 
+.create{
+     margin-top: 4em;
+     margin-right: 3rem;
+     color: white;
+     font-size: 14px;
+     font-weight: 400;
+     background-color:hsl(32, 96%, 52%);
+     width: 75%;
+     padding: 15px;
+     border-radius: 5px;
+     border: none;
+     
+ 
+ }
+ 
+.social{
+     width: 40% ;
+     display: flex;
+     padding: 5% 4%;
+ 
+ }
+.social-buttons button{
+     display: flex;
+     flex-direction: row;
+     margin:1em;
+     font-size: 14px;
+     font-weight: 400;
+     width: 350px;
+     padding: 5px;
+     border-radius: 6px;
+     border: solid 1px;
+     align-items: center;
+ }
+     
+.social-buttons button:hover{
+     background: blue;
+     }
+ 
+.social-buttons img{
+     margin-right: 10px;
     
-    .Main{
-        width: 80%;
-        margin: auto;
-        height: 100vh;
-        padding: ;
-        display: block;
-        align-items: center;
-        background-image:url(/images/register_images/Group\ 70.png) ;
-        background-repeat: no-repeat;
-        background-size: 7%;
-        background-position: 11% 76%;
-    }
-    .main-content{
-        height: 100%;
-        width: 100%;
-        background-color: white(122, 41, 41);
-        display: block;
-    }
-    .card{
-        width: 100%;
-        border-right: none;
-        font-size: 16px;  
+ }
+.ggle{
+     text-indent: 0;
+     width: 15%;
+ }
+.fb {
+     width: 16%;
+    
+ }
+.appl {
+     color:black;
+     text-indent: 0;
+     width: 16%;
+ }
+ 
+ 
+ /*responsive*/
+ 
+@media all and (max-width: 600px) {
+     body {
+         /* border: 1px solid red; */
+         padding: 0;
+         margin: 0;
+         background-image:url(/images/register_images/Group\ 70.png), url(/images/register_images/Group\ 70.png),
+         url(/images/register_images/Group\ 81.png), url(/images/register_images/Group\ 82.png) ;
+         background-repeat: no-repeat;
+         background-size: 10%, 10%, 14%,14%;
+         background-position: 68% 16%, 11% 66%, bottom left, bottom right;
+    
+         /* width: 100%; */
+        }
+     .header1 {
+         flex-direction: column;
+         width: 100%;
+         height: 30vh;
+         padding: 0;
+         margin-bottom: 60px;
+         background-position-y: -90px;
+         background-position-x: 5px;
+         background-size: cover;
+         /* border: 1px solid red;  */
+         }
+     .navBar {
+         /* border: 1px solid red; */
+         width: 100%;
+         padding: 0;
+      
      }
-
-    #input_password{
-        width: 70% ;
-    }
-
-     .create{
-         margin:auto;
-         width: 300px;
+     .navLinks {
+         /* border: 1px solid red; */
+         width: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0;
      }
-
-     .social{
-        width: 100%;
-        margin: auto;
-        display: block;
-        padding: 0;
+     .navLinks li {
+         /* border: 1px solid red; */
+         padding: 0;
+         margin: 0 8px;
+         font-size: 14px;
      }
-
-     .social-buttons button{
-      width: 200px;
-      margin: 1rem auto;
-    }
-}
+     .navLinks li a {
+         /* border: 1px solid red; */
+         font-size: 11px;
+         width: 100%;
+         margin: 0;
+     }
+     
+     .Main{
+         width: 80%;
+         margin: auto;
+         height: 100vh;
+         padding: ;
+         display: block;
+         align-items: center;
+         background-image:url(/images/register_images/Group\ 70.png) ;
+         background-repeat: no-repeat;
+         background-size: 7%;
+         background-position: 11% 76%;
+     }
+     .main-content{
+         height: 100%;
+         width: 100%;
+         background-color: white(122, 41, 41);
+         display: block;
+     }
+     .card{
+         width: 100%;
+         border-right: none;
+         font-size: 16px;  
+      }
+ 
+     #input_password{
+         width: 70% ;
+     }
+ 
+      .create{
+          margin:auto;
+          width: 300px;
+      }
+ 
+      .social{
+         width: 100%;
+         margin: auto;
+         display: block;
+         padding: 0;
+      }
+ 
+      .social-buttons button{
+       width: 200px;
+       margin: 1rem auto;
+     }
+ }
+ 
