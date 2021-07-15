@@ -172,11 +172,12 @@ p {
     display: flex;
     margin: 0;
     position: absolute;
-    top: 120%;
+    top: 124%;
     left: 50%;
     transform: translate(-50%, -50%)
 
 }
+
 .footer-top {
     display: flex;
     align-items: center;
@@ -284,7 +285,7 @@ textarea:focus, input:focus{
     .navbar {
         position: absolute;
         top: 10em;
-        left: 0;
+        left: -15px;
         width: 100%;
     }
     .logo {
@@ -402,7 +403,7 @@ textarea:focus, input:focus{
         height: 400px;
         margin: 0;
         position: absolute;
-        top:145%;
+        top:146%;
         left: 50%;
         
         
@@ -497,5 +498,21 @@ textarea:focus, input:focus{
     .blue-border {
             display: none;
     }
+
+    @media only screen and (max-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+        .footer {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            height: 400px;
+            margin: 0;
+            position: absolute;
+            top:155%;
+            left: 50%;  
+            
+        }
+    }
     
 }
+
+
