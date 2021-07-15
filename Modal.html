@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="modal.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <img src="/Images/modal-images/brandlogo.png" alt="priced-out-brand-logo">
+        </div>
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="#" class="about">About Us</a></li>
+                <li><a href="product.html" class="products">Products</a></li>
+                <li><a href="faq.html" class="faq">FAQs</a></li>
+                <li><a href="#" class="contact">Contact Us</a></li>
+                <li><a href="signup.html" class="login">Log in</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <h1>Product Summary</h1>
+    <img src="/Images/modal-images/boxes.png" alt="3-decorative-golden-squares-randomly-overlapping" class="boxes">
+
+    <div class="main">
+        
+        
+        <div class="phones">
+                <figure>
+                <img src="/Images/modal-images/phones.png" alt="gold-iPhone-12-pro">
+                <figcaption>
+                    IPhone 12 Pro <span>|</span> 256 GB <span>|</span> Gold 
+                </figcaption>
+                </figure>
+        </div>       
+        
+        
+        <div class="info">
+                    <p>Product</p>
+                    <p>Price</p>
+                    <p>Condition</p>
+                    <p>Ship Time</p>
+        </div>
+        <div class="amazon">
+            <h2>Amazon</h2>
+                <p>IPhone 12 Pro - 256 GB</p>
+                <p><a href="https://amz.run/4f2j" >$1099.00</a></p>
+                <p>New</p>
+                <p>7 Days</p>
+        </div>
+        <div class="ebay">
+            <h2>Ebay</h2>
+                <p>IPhone 12 Pro - 256 GB</p>
+                <p><a href="http://www.ebay.com/itm/164463822179 ">$1185.00</a></p>
+                <p>New</p>
+                <p>7 Days</p>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+      
+        <div class="footer-top">
+            <div class="capsule">
+            <img src="/Images/modal-images/like-icon.svg" class="like-btn" alt="Like Button" onclick="onClick()">
+            <p>Like <a id="clicks">0</a></p>
+        </div>
+
+            <div class="social-icons">
+            
+                <img src="/Images/modal-images/fb-icon.svg">
+                <img src="/Images/modal-images/twtr-icon.svg">
+                <img src="/Images/modal-images/ig-icon.svg">
+                <img src="/Images/modal-images/link-icon.svg" class="link">
+            </div>
+        
+        </div>
+            <textarea rows="15" cols="120" name="messages" placeholder="No messages yet"></textarea>  
+            
+            
+    </div>
+
+    <div class="blue-border"></div>
+        
+</div>
+
+
+</body>
+
+<!-- Reference JavaScript event code -->
+<script>
+
+var clicks = 0;
+
+function onClick() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+};
+</script>
+
+</html>
