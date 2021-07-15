@@ -23,24 +23,6 @@ body {
     height: 100%;
 }
 
-/*.gradient {
-    position: relative;
-    height: 100vh;
-    
-}
-
-.gradient::before {
-    content: "";
-    z-index: -1;
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    background-image: linear-gradient( #FF9218 ,#F9F9F9);
-    transform: rotate(-180deg);
-    opacity: 0.2;
-   
-    
-}*/
 
 header {
     display: flex;
@@ -284,6 +266,7 @@ textarea:focus, input:focus{
 
 
 /* MOBILE VIEW*/
+
 
 @media all and (max-width: 600px) {
 
