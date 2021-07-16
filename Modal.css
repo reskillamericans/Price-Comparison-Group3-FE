@@ -241,6 +241,7 @@ textarea {
     position: absolute;
     resize: none;
     text-indent: 6px;
+    overflow: hidden;
     
 }
 
