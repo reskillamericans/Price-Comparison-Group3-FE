@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body{
+    height: 130vh;
     margin: 0;
     padding: 0;
     background-color: #f4f0ed; 
     background-image:url(/images/register_images/Group\ 70.png), url(/images/register_images/Group\ 70.png),
      url(/images/register_images/Group\ 81.png), url(/images/register_images/Group\ 82.png) ;
     background-repeat: no-repeat;
-    background-size: 6%, 6%, 9%,9%;
-    background-position: 76% 28%, 10.5% 79%, bottom left, bottom right;
-    font-family: sans-serif;
+    background-size: 8%, 8%, 9%,9%;
+    background-position: 79% 17%, 14% 72%, bottom left, bottom right;
+    font-family: "Open Sans", sans-serif;
 
 }
 
@@ -22,7 +23,7 @@ body{
 }
 .navLinks li a {
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     color: #2D3047;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -40,7 +41,7 @@ header{
     margin: 0px;
     max-width: 100%;
     height: 100px;
-    background: url(images/register_images/PricedOut___1.svg);
+    background: url(images/register_images/PricedOut___1.svg); 
     background-repeat: no-repeat;
     background-position-x: 10px;
     background-position-y: -120px;
@@ -65,7 +66,7 @@ padding: 0px 20px;
 .Main
  {
      width: 100%;
-     height: 70%;
+     height: 80%;
      /* margin: auto; */
      display: flex;
      flex-direction: column;
@@ -75,28 +76,23 @@ padding: 0px 20px;
  
 .main-content{
      height: 100%;
-     width: 80%;
+     width: 70%;
      background-color: white(122, 41, 41);
      display: flex;
      margin:auto;
      
   }
 .rg{
-     text-align: center;
-     margin-bottom: 2em;
- 
+    font-size: 1.5rem;
+    padding: 2%;
+    text-align: center;
  }
  
 .card{
     width: 50% ;
     border-right: 1px solid grey;
-    font-size: 16px;
+    font-size: 14px;
  }
- 
-.info{
-     margin-right: 0;
- 
-  }
  
 .terms{
      color: hsl(32, 96%, 52%);
@@ -113,22 +109,18 @@ padding: 0px 20px;
      margin-right: 1em;
   }
 .flt{
-      margin-right: 3rem;
-      
- 
+      margin-right: 3rem;   
   }
  
- 
 .floating{
-     margin-bottom: 1rem;
+     margin-bottom: 2rem;
      background-color:#f4f0ed ;
      transition: all .3s;
-     margin-right: 1rem;
-    
+     margin-right: 1rem;  
  }
  
 .floating_input{
-     background-color: #f4f0ed ;
+      background-color: #f4f0ed ;
       box-shadow: none;
       border:none;
       border-bottom: 1px solid black;
@@ -139,10 +131,11 @@ padding: 0px 20px;
 #input_fname{
       width: 100%;
   }
+
 #input_lname{
-      width: 100%;
-     
+      width: 100%;  
   }
+
 #input_password{
       width: 85% ;
   }
@@ -172,7 +165,7 @@ padding: 0px 20px;
   }
  
 .create{
-     margin-top: 4em;
+     margin-top: 7.5em;
      margin-right: 3rem;
      color: white;
      font-size: 14px;
@@ -182,23 +175,23 @@ padding: 0px 20px;
      padding: 15px;
      border-radius: 5px;
      border: none;
-     
- 
  }
  
 .social{
      width: 40% ;
      display: flex;
-     padding: 5% 4%;
+     flex-direction: column;
+     padding: 0% 6%; */
  
  }
 .social-buttons button{
      display: flex;
      flex-direction: row;
-     margin:1em;
+     margin-bottom:1em;
      font-size: 14px;
      font-weight: 400;
-     width: 350px;
+     width: 100%;
+     height: 45px;
      padding: 5px;
      border-radius: 6px;
      border: solid 1px;
@@ -215,17 +208,67 @@ padding: 0px 20px;
  }
 .ggle{
      text-indent: 0;
-     width: 15%;
+     width: 10%;
  }
 .fb {
-     width: 16%;
+     width: 11%;
     
  }
 .appl {
-     color:black;
+     color:blue;
      text-indent: 0;
-     width: 16%;
+     width: 11%;
  }
+    /* login stying */
+    .lg-email{
+        text-align: center;
+    }
+.lg {
+    font-size: 1.5rem;
+    padding: 2%;
+    text-align: center;
+ }
+ .login-form{
+     
+ }
+
+ .login-input{
+    display: block;
+    margin-bottom: 1rem;
+    background-color: #f4f0ed;
+    border-color : rgb(184, 184, 184);
+    border-radius: 5px;
+    box-shadow: none;
+    width: 100%;
+    height: 45px;
+ }
+ #checkbox{
+     margin: 0;
+    
+ }
+ .remember{
+     padding-right: 10rem;
+     margin-bottom: 1rem;
+     display: inline-block;
+ }
+ .forget-pass{
+    color: hsl(32, 96%, 52%);
+    text-decoration: none;
+   
+ }
+
+.login-btn{
+    margin-top: 2em;
+    margin-right: 3rem;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    background-color:hsl(32, 96%, 52%);
+    width: 75%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
  
  
  /*responsive*/
@@ -233,13 +276,14 @@ padding: 0px 20px;
 @media all and (max-width: 600px) {
      body {
          /* border: 1px solid red; */
+         height:210vh;
          padding: 0;
          margin: 0;
          background-image:url(/images/register_images/Group\ 70.png), url(/images/register_images/Group\ 70.png),
          url(/images/register_images/Group\ 81.png), url(/images/register_images/Group\ 82.png) ;
          background-repeat: no-repeat;
          background-size: 10%, 10%, 14%,14%;
-         background-position: 68% 16%, 11% 66%, bottom left, bottom right;
+         background-position: 68% 16%, 11% 66%, 0% 100%, bottom right;
     
          /* width: 100%; */
         }
@@ -288,10 +332,6 @@ padding: 0px 20px;
          padding: ;
          display: block;
          align-items: center;
-         background-image:url(/images/register_images/Group\ 70.png) ;
-         background-repeat: no-repeat;
-         background-size: 7%;
-         background-position: 11% 76%;
      }
      .main-content{
          height: 100%;
@@ -325,5 +365,16 @@ padding: 0px 20px;
        width: 200px;
        margin: 1rem auto;
      }
+
+     /*mobile view login styling */
+     .forget-pass{
+        display: block;
+        
+     }
+     .login-btn{
+        margin:auto;
+        width: 300px;
+    }
+     
  }
  
