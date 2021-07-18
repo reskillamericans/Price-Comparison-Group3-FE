@@ -99,6 +99,7 @@ padding: 0px 20px;
 }
 
 .form h5{
+    margin-top: 0;
     padding: 0;
     margin-bottom:1rem;
 }
@@ -113,14 +114,14 @@ padding: 0px 20px;
 }
 
  .floating_input{
-    color: #f4f0ed ;
+    color: #0a0a0a ;
     box-shadow: none;
     padding: 0.5em;
     border: 1px solid grey;
     border-radius: 5px;
     width: 100% ;
     height: 28px;
-    padding-right: 1rem;
+    padding-right: 1.3rem;
     transition: all .5s;
  }
  .floating_input::placeholder{
@@ -151,7 +152,7 @@ padding: 0px 20px;
 }
 
 #input_message{
-    height: 10vh;
+    height: 17vh;
 }
 .send-btn{
    /* margin-top: 1em; */
@@ -264,6 +265,9 @@ footer{
     box-shadow: none;
     border: none;
     cursor: pointer;
+}
+.sub button:hover{
+    background-color:hsl(32, 96%, 52%) ;
 }
 .copyright{
     display: flex;
