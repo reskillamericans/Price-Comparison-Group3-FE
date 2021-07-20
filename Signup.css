@@ -237,7 +237,7 @@ padding: 0px 20px;
     margin-bottom: 1rem;
     background-color: #f4f0ed;
     border-color : rgb(184, 184, 184);
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: none;
     width: 100%;
     height: 45px;
@@ -247,7 +247,7 @@ padding: 0px 20px;
     
  }
  .remember{
-     padding-right: 10rem;
+     padding-right: 9rem;
      margin-bottom: 1rem;
      display: inline-block;
  }
@@ -264,7 +264,7 @@ padding: 0px 20px;
     font-size: 14px;
     font-weight: 400;
     background-color:hsl(32, 96%, 52%);
-    width: 75%;
+    width: 85%;
     padding: 15px;
     border-radius: 5px;
     border: none;
