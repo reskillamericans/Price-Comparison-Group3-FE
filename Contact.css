@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f0ed; 
+    background-image:url(/images/contact-images/Group\ 70.png), url(/images/contact-images/Group\ 70.png),
+     url(/images/contact-images/Group\ 81.png), url(/images/contact-images/Group\ 82.png) ;
+    background-repeat: no-repeat;
+    background-size: 8%, 8%, 9%,9%;
+    background-position: 77% 22%, 18.5% 64%, 0% 68% , 100% 68%;
+
+}
+
+/* Header and nav bar style*/
+.navBar{
+    display: flex;
+    flex-flow: column;
+    /* height : 210px; */
+    align-items:center;
+}
+.navLinks li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2D3047;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+.navLinks li a:hover{
+    color: #FF9218;
+}
+header{
+   
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin: 0px;
+    max-width: 100%;
+    height: 100px;
+    background: url(images/contact-images/PricedOut___1.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: -120px;
+}
+header::before{
+    content: "";
+    background-image: linear-gradient(#FF9218, #F9F9F9);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 11%;
+}
+.navLinks li{
+display: inline-block;
+padding: 0px 20px;
+}
+.Main
+{
+    width: 50%;
+    height: 60%;
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    
+}
+
+.main-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* border-radius: 8px; */
+    box-shadow: #f4f0ed;
+
+    
+ }
+.touch{
+    text-align: center;
+    margin-top: 0.5em; 
+    text-decoration: underline;
+    color: hsl(32, 96%, 52%);
+}
+
+.card{
+   width: 50% ;
+   padding:  0  0 0 5% ;
+   font-size: 16px;
+}
+
+.form h5{
+    margin-top: 0;
+    padding: 0;
+    margin-bottom:1rem;
+}
+ /* input feilds stylying*/
+ 
+.floating{
+    /* margin-bottom: 1rem; */
+    background-color:white ;
+    transition: all .3s;
+    margin-right: 1rem;
+   
+}
+
+ .floating_input{
+    color: #0a0a0a ;
+    box-shadow: none;
+    padding: 0.5em;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100% ;
+    height: 28px;
+    padding-right: 1.3rem;
+    transition: all .5s;
+ }
+ .floating_input::placeholder{
+    color: transparent;
+}
+
+.floating_input:focus{
+   box-shadow: none;
+   outline: none;
+   border-color:#FF9218  ;
+}
+.floating_input:focus +.floating_label,
+.floating_input:not(:placeholder-shown) +.floating_label
+{
+    transform: translateY(-2.5rem) scale(.8)
+}
+
+.floating_label{
+    display: block;
+    text-indent: 5px;
+    font-size: 14px;
+    color: grey;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition:all .3;
+    opacity: 1;
+    
+}
+
+#input_message{
+    height: 17vh;
+}
+.send-btn{
+   /* margin-top: 1em; */
+   /* margin-right: 3rem; */
+   color: white;
+   font-size: 14px;
+   font-weight: 400;
+   background-color:hsl(32, 96%, 52%);
+   width: 75%;
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+}
+
+.send-btn:hover{
+    color: rgb(226, 19, 19);
+}
+
+.address{
+   width: 50% ;
+   display: flex; 
+   flex-direction: column;
+   padding: 1% 1%;
+   font-size: 10px;
+   color: grey;
+   justify-content: space-around;
+   align-items: flex-end;
+}
+
+.address p{
+    margin-right: 3rem;
+    height: 40%;
+    
+}
+
+.address span::before { 
+    content: '\A'; white-space: pre;
+ }
+ .contact{
+     color: black;
+     font-weight: 530;
+ 
+ }
+
+
+.address img{
+    width: 80%;
+    /* margin: 70px 5px 0px 64px; */
+    justify-content: flex-end;
+}
+
+/*footer Stying*/
+
+footer{
+    background-color: #2d3047;
+    height: 40%;
+    color: grey;
+}
+.ft{
+    display: flex;
+    font-size: 10px;
+    height: 85%;
+    justify-content: flex-end;
+}
+.ft dl{
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    text-decoration: 2px solid underline;
+    font-size: 12px;
+    font-weight: 600;
+}
+.ft li{
+    list-style-type: none;
+    margin-bottom: 0.75rem;
+}
+.ft a{
+    text-decoration: none;
+    color: grey;    
+}
+.subscribe{
+    display: flex ;
+    flex-direction: column;
+    margin: 0 6rem;
+}
+.subscribe span::before { 
+    content: '\A'; white-space: pre;
+ }
+.email{
+    margin-right: 2rem;
+    height: 100%;
+    border: none;
+
+}
+.floating_input1{
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    text-indent: 5px;
+    outline: none;
+}
+.sub{
+    display: flex;
+    height: 18%;
+
+}
+.sub button{
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+.sub button:hover{
+    background-color:hsl(32, 96%, 52%) ;
+}
+.copyright{
+    display: flex;
+    height: 15%;
+    align-items: center;
+    border-top: 2px solid gray;
+}
+
+.copyright p{
+    font-size: 8px;
+    width: 75%;
+    margin-left: 5rem;
+}
+.copyright i{
+    margin-right: 1rem;
+    color: white;
+}
+
+@media all and (max-width: 600px) {
+    body {
+        /* border: 1px solid red; */
+        padding: 0;
+        margin: 0;
+        background-image:url(/images/register_images/Group\ 70.png), url(/images/register_images/Group\ 70.png),
+        url(/images/register_images/Group\ 81.png), url(/images/register_images/Group\ 82.png) ;
+        background-repeat: no-repeat;
+        background-size: 10%, 10%, 14%,14%;
+        background-position: 48% 16%, 11% 66%, bottom left, bottom right;
+   
+        /* width: 100%; */
+       }
+    .header1 {
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        padding: 0;
+        margin-bottom: 0;
+        background-position-y: -90px;
+        background-position-x: 5px;
+        background-size: cover;
+        /* border: 1px solid red;  */
+        }
+    .navBar {
+        /* border: 1px solid red; */
+        width: 100%;
+        padding: 0;
+     
+    }
+    .navLinks {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .navLinks li {
+        /* border: 1px solid red; */
+        padding: 0;
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    .navLinks li a {
+        /* border: 1px solid red; */
+        font-size: 11px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .Main{
+        width: 90%;
+        margin: auto;
+        height: 85vh;
+        display: block;
+        align-items: center;
+        background-color: white;
+    }
+    .main-content{
+        height: 90%;
+        width: 90%;
+        margin: auto;
+        background-color: white(122, 41, 41);
+        display: block;
+        padding: 1%;
+    }
+    .card{
+        width: 100%;
+        border-right: none;
+        font-size: 16px;  
+        padding: 1%;
+     }
+
+    .send-btn{
+         width: 80%;
+         margin-left:1.5rem;
+       
+     }
+
+    .address{
+        width: 50%;
+        margin: auto;
+        display: block;
+        padding: 0;
+     }
+
+    .address p{
+         height: 20% ;
+        
+     }
+
+    .footer{
+        width: 50%;
+        font-size: 2.5vw;
+        margin: auto;
+    }
+
+    .ft{
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 2.5vw;
+        justify-content: center;
+    
+    }
+    .ft dl{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-decoration: 1px solid underline;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .ft li{
+        list-style-type: none;
+        margin-bottom: 0.50rem;
+        font-size: 8px;
+    }
+    .sub{
+        display: block;
+    }
+    
+    .subscribe{
+        margin: 0;
+        font-size: 10px;
+    }
+    
+    .subscribe button{
+        width: 100px;
+        margin-left: 2rem;
+    }
+   
+    .email{
+        margin-bottom:0.5rem;
+        height: 100%;
+        border: none;
+    }
+
+    .floating_input1{
+        width: 100px;
+        margin-left: 2rem;
+    }
+}

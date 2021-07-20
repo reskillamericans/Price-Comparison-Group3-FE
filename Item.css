@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #F9F9F9;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navBar{ 
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+}
+
+.navLinks li a {
+    font-size: 16px;
+    font-weight: normal;
+    color: #2D3047;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+} 
+
+.navLinks li a:hover{
+    color: #FF9218;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin: 0px;
+    width: 1420px; 
+    height: 200px;   
+
+    background: url(images/product_images/PricedOut.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: -100px;
+} 
+
+header::before{
+    content: "";
+    background-image: linear-gradient(#FF9218, #F9F9F9);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 11%;
+}
+
+.navLinks li{
+display: inline-block;
+padding: 0px 20px;
+}
+
+
+.centerGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+
+    grid-template-areas: 
+      "productImage description"
+      "productImage description"
+      "productImage description"
+      "productImage description"
+      "productImage description"; 
+
+      align-items: center;
+      justify-items: center;
+}
+
+.productImage { 
+    grid-area: productImage; 
+}
+
+.productImage img{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.productImage:hover img{
+    transform: scale(1.25);
+}
+
+.productImage p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #181925;
+}
+
+
+.description { 
+    grid-area: description; 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #797474;
+    }
+
+.productName h1{ 
+    grid-area: productName; 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 87px;
+    text-align: center;
+    color: #FF9218;
+}
+
+.store {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;   
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.features { 
+    grid-area: features; 
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #797474;
+    width: 500px;
+    margin-left: 50px;
+    }
+
+.price{
+    font-style: normal;
+    font-size: 37px;
+    line-height: 50px;
+    text-align: center;
+    color: #797474;   
+}
+
+.features p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #797474;
+    margin-left: 25px ;
+}
+
+.features li{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #797474;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.productColors{
+    font-weight: bold;
+}
+
+.amazonButton { 
+    grid-area: amazonButton; 
+}
+
+.amazonButton button{ 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FF9218;
+
+    /* button styling */
+    width: 415px;
+    height: 97px;
+    background: #2D3047;
+    border: 1px solid #F9F9F9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    text-align: center;
+    margin-left: 80px;
+}
+
+.line1{
+    position: absolute;
+    width: 1000px;
+    height: 0px;
+    right: 200px;
+    top: 228px;
+
+    margin-top: 500px;
+
+    border: 1px solid #C4C4C4;
+    transform: rotate(90deg);
+}
+  
+.line2{
+    width: 445px;
+
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+    border: 1px solid #C4C4C4;
+}
+
+footer{
+    height: 400px;
+
+    background-image: 
+                    url(images/single_product_images/Ellipse.png), 
+                    url(images/single_product_images/Ellipse.png), 
+                    url(images/single_product_images/Rectangle\ 11.png),
+                    url(images/single_product_images/Rectangle\ 11.png),
+                    url(images/single_product_images/Rectangle\ 11.png);
+    background-position:  
+                    top 150px left 200px,
+                    top 150px right 200px,
+                    top 120px right 337px,
+                    top 175px right 224px,
+                    top 205px right 258px;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width: 1400px){
+
+    .line1{
+        display: none;
+    }
+
+}
+
+
+@media all and (max-width: 600px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    header {
+        flex-direction: column;
+        width: 550px;
+        height: 25vh;
+        padding: 0;
+        margin-bottom: 60px;
+        background-position-x: 70px;
+        background-position-y: -100px;
+        background-size: auto;
+    }
+
+    nav{
+        position: absolute;
+        top: 150px;
+        right: 0px;
+    }
+
+    .navBar {
+        width: 100%;
+        padding: 0;
+    }
+    .navLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .navLinks li {
+        padding: 0;
+        margin: 0 8px;
+    }
+    .navLinks li a {
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: .5fr .5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "productImage"
+            "description"; 
+        margin-right: 100px;
+    }
+
+    .productImage { grid-area: productImage; }
+    .description { grid-area: description;}
+    
+
+    .productImage img{
+        width: 320px;
+        height: 400px;
+
+        /* border: 5px solid grey; */
+    }
+
+    .description{
+        /* border: 5px solid firebrick; */
+        line-height: 10px;
+        margin-bottom: 50px;
+    }
+    .productName h1{ 
+        font-size: 40px;
+    }
+    .price{
+        text-align: left;
+    }
+
+    .line2{
+        width: 460px;
+    }
+
+    footer{
+        display: none;
+    }
+
+}

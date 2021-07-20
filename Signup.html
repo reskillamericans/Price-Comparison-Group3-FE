@@ -17,15 +17,16 @@
                 <li><a href="/about.html">About Us</a></li>
                 <li><a href="/Product.html">Products</a></li>
                 <li><a href="/faq.html">FAQS</a></li>
-                <li><a href="/contack.html">Contact Us</a></li>
+                <li><a href="/Contact.html">Contact Us</a></li>
                 <li><a href="/Signup.html">Register</a></li>
             </ul>
         </nav>
     </header>
     <Section class="Main">
-        <div class="rg"><h2>Register Here</h2></div>
+        
         <div class="main-content">
             <div class="card">
+                <div class="rg"><h1>Register Here</h1></div>
                 <Div class="form" >
                     <div class="floating1" >
                         <div class="flt">
@@ -43,7 +44,7 @@
                         <label for="input_email" class="floating_label" data-content="Email" > <span class="hidden"> Email </span></label>
                    </div>
                    
-                    <div class="floating">
+                    <div class="floating" id="float">
                         <input id="input_number" class="floating_input" name="Number" type="number" placeholder="Phone Number">
                         <label for="input_number" class="floating_label" data-content="Phone Number" > <span class="hidden"> Phone Number </span></label>
                     </div>
@@ -52,8 +53,8 @@
                 
                         <input id="input_password" class="floating_input" name="password" type="password" placeholder="Password"> <span><input type="checkbox" onclick="myFunction()">Show</span>
                         <label for="input_password" class="floating_label" data-content="Password" > <span class="hidden"> Password </span></label>
-                
                     </div>
+                
                     
                      
                     <p> by Creating an accout you agree to our <a class="terms" href="#">User Agreement</a> and acknowledge reading our u
@@ -63,12 +64,26 @@
                 </Div>
             </div>
             <div class="social">
+                
+                <div class="lg"><h1>Login</h1></div>
                 <div class="social-buttons">
                     <button class="google"> <img class="ggle" src="https://img.icons8.com/color/48/000000/google-logo.png"/></i>Login with Google</button>
                     <button class="facebook"> <img class="fb" src="https://img.icons8.com/color/48/000000/facebook.png"/>Login with Facebook</button>
                     <button class="Apple"><img class="appl" src="https://img.icons8.com/ios-filled/50/000000/mac-os.png"/>Login with Apple</button>
                 </div>
-            
+                <div class="lg-email"><h5>or login with Email</h5></div>
+                <div class="login-form">
+                    <input id="login-email" class="login-input" type="email" placeholder="Email"> 
+                    <input  id= "password2" class="login-input" type="Password" placeholder="Password">
+                
+                    <input id="checkbox" type="checkbox">
+                    <label class="remember" for="checkbox"> Remember Me</label>
+        
+                    <a class="forget-pass" href="#"> Forget Password</a>
+
+                    <button class="login-btn"> Login</button>
+
+                </div>
             </div>
         </div>
     </Section> 
