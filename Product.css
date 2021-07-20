@@ -277,52 +277,22 @@ a{
         padding: 0;
         margin: 0;
         background-image: none;
+        zoom: 80%;
+
     }
 
     header {
-        /* flex-direction: column;
-        width: 500px;
+        flex-direction: column;
+        width: 550px;
         height: 25vh;
         padding: 0;
         margin-bottom: 60px;
         background-position-x: 40px;
         background-position-y: -100px;
-        background-size: auto; */
-
-        display: none;
+        background-size: auto;
     }
 
-    .mobile-topbar {
-        /* border: var(--debug); */
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /* Mobile Logo  */
-    .mobile-logo {
-        /* border: var(--debug); */
-        display: block;
-        width: 70%;
-        margin: -6% 0 -20%;
-        position: relative;
-        left: 15%;
-    }
-
-    /* Hamburger Icon  */
-    #open {
-        display: block;
-        font-size: 1.5rem;
-        color: #FF9218;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        padding: 2.5% 3.5% 0;
-        cursor: pointer;
-    }
-
-    /* .mobile-header {
-        display: none;
-    } */
+    
 
     nav{
         position: absolute;
@@ -346,7 +316,7 @@ a{
         margin: 0 8px;
     }
     .navLinks li a {
-        font-size: 1rem;
+        font-size: 11px;
         width: 100%;
         margin: 0;
     }
