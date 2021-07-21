@@ -40,7 +40,7 @@ header{
     height: 167px; 
     background: url(./images/landingpage-images/PricedOut2.svg); 
     background-repeat: no-repeat; 
-    background-position-x: 10px; 
+    background-position-x: -61px; 
     background-position-y: -110px;
 
 }
@@ -137,6 +137,7 @@ p {
 .how { 
     margin-left: 55%; 
     margin-top: 5%;
+    padding-right: 20px;
 }
 
 
@@ -151,7 +152,7 @@ p {
 .solo img { 
     height: 400px; 
     float: right;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 
@@ -159,9 +160,12 @@ p {
     width: 555px; 
     height: 300px; 
     float: left; 
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
+/* .how br {
+    display: none;
+} */
 
 footer { 
     width: auto; 
@@ -170,7 +174,77 @@ footer {
     margin-top: 150px;
 }
 
-@media all and (max-width: 650px) {
+
+@media all and (max-width: 780px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    header {
+        flex-direction: column;
+        width: 560px;
+        height: 145px;
+        padding: 0;
+        background-position-x: 120px;
+        background-position-y: -70px;
+        background-size: 50%;
+    }
+    
+    .navBar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navLinks li {
+        padding: 0;
+        margin: 0 8px;
+    }
+
+    .navLinks li a {
+        font-size: 11px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .stripes img {
+        height: 100px;
+    }
+
+    .solo img {
+        height: 340px;
+    }
+
+    .duo img {
+        width: 505px;
+        height: 280px;
+    }
+
+    .how {
+        text-align: end;
+    }
+
+    .how br {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
 
 html, body { 
          overflow-x: hidden; 
@@ -189,7 +263,7 @@ header {
     height: 145px; 
     padding: 0; 
     background-position-x: 40px; 
-    background-position-y: -55px; 
+    background-position-y: -70px; 
     background-size: 50%; 
 } 
     
@@ -209,7 +283,6 @@ header {
     margin-right: 35%; 
 }
 
-
 .navLinks li { 
     padding: 0; 
     margin: 0 8px; 
@@ -222,11 +295,9 @@ header {
      margin: 0; 
     }
 
-
 .stripes img { 
     height: 100px; 
 }
-
 
 main { 
     flex-direction: column; 
@@ -236,12 +307,10 @@ main {
     padding: 20px; 
 }
 
-
 .about { 
     margin: 0; 
     text-align: center; 
 }
-
 
 .how { 
     margin: 0; 
