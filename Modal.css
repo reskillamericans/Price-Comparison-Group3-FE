@@ -23,10 +23,13 @@ body {
 }
 
 header {
-    display: flex;
-    position: relative;
-    align-items: center;
-    height: 11em;
+position: relative;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin: auto;
+height: 167px;
+
     
 }
 
@@ -44,26 +47,33 @@ header::before {
 
 header li {
     float: left;
+    padding-right: 45px;
 }
 
 
 header a {
-    padding: 20px;
+    
     font-size: 18px;
     color: #181925;
     font-family: 'Average Sans', sans-serif;
 }
 
 .navbar {
-    position: relative;
-    left: 12em;   
+    display: flex;
+    align-content: center;
+    flex-flow: column;  
  }
+
+ /* .navbar li {
+    padding: 0px 20px;
+    display: inline-block;
+ } */
 
  .logo {
     width: -moz-fit-content;
     position: relative;
-    top: 3.5em;
-    left: 4em;
+    top: 35%;
+    right: 17%;
 }
 .logo img {
     width: 435px;
@@ -274,6 +284,7 @@ textarea:focus, input:focus{
     header {
         display: flex;
         flex-direction: column;
+        width: 560px;
     }
 
     header a {
@@ -281,17 +292,31 @@ textarea:focus, input:focus{
         font-size: 11px;
     }
 
+    header ul {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        padding: 0;
+        margin: 0;
+        margin-right: 35%;
+    }
+
+    header li {
+        float:left;
+        padding: 0;
+    }
+
     .navbar {
         position: absolute;
-        top: 10em;
-        left: -15px;
+        /* top: 10em;
+        left: -15px; */
         width: 100%;
     }
-    .logo {
+    /* .logo {
         position: unset;
         width: -moz-fit-content;
         width: fit-content;
-    }
+    } */
     .logo img {
         width: 300px;
         max-width: 100%;
