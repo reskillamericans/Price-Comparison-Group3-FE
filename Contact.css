@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+:root {
+    --debug: 1px solid red;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -18,7 +22,13 @@ body{
     flex-flow: column;
     /* height : 210px; */
     align-items:center;
+    /* border: var(--debug); */
 }
+
+/* .navLinks {
+    border: var(--debug);
+} */
+
 .navLinks li a {
     font-size: 16px;
     font-weight: bold;
@@ -31,7 +41,7 @@ body{
     color: #FF9218;
 }
 header{
-   
+    /* border: var(--debug); */
     position: relative;
     display: flex;
     justify-content: flex-end;

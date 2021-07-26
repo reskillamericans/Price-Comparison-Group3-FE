@@ -4,8 +4,11 @@
 }
 
 body{
-    margin: 0;
-    background-color: #F9F9F9;
+    margin: 0; 
+    padding: 0px; 
+    background-color: #f4f0ed; 
+    position: relative;
+    
     padding-bottom: 100px;
 
     background-image: 
@@ -22,6 +25,7 @@ body{
     flex-flow: column;
     align-items:center;
 }
+
 .navLinks li a {
     font-size: 16px;
     font-weight: normal;
@@ -30,23 +34,17 @@ body{
     font-family: "Open Sans", sans-serif;
     position: relative;
 } 
+
 .navLinks li a:hover{
     color: #FF9218;
 }
+
 header{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    margin: 0px;
+    position: relative; 
     width: 100%; 
-    height: 200px;   
-    background: url(images/product_images/PricedOut.svg);
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: -100px;
+    padding-bottom: 20px;
 } 
+
 header::before{
     content: "";
     background-image: linear-gradient(#FF9218, #F9F9F9);
@@ -58,11 +56,25 @@ header::before{
     left: 0px;
     opacity: 11%;
 }
+
 .navLinks li{
 display: inline-block;
 padding: 0px 20px;
 }
 
+.gradient{
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin: auto; 
+    width: 95%; 
+    height: 167px; 
+    background: url(./images/product_images/PricedOut.svg); 
+    background-repeat: no-repeat; 
+    background-position-x: -61px; 
+    background-position-y: -110px;
+}
 
 .wrapper{
     display: flex;
