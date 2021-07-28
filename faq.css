@@ -8,105 +8,26 @@ body {
     margin: 0;
 }
 
- /* Hamburger Icon  */
- #open {
-     display: none;
- }
-
-/* Mobile Header  */
-.mobile-header {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 99;
-    background: #FFF7F1;
-    top: 0;
-    display: none;
-}
-
-.mobile-header-exit {
-    position: absolute;
-    font-size: 2.5rem;
-    color: #ff9218;
-    right: 3%;
-    top: 1%;
-    transform: rotate(45deg);
-    cursor: pointer;
-}
-
-.mobile-nav {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.mobile-ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 55vh;
-    width: 90%;
-}
-
-.mobile-ul li {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-    border-radius: 8px;
-}
-
-.mobile-ul li:hover {
-    background: #ff9218;
-}
-
-.mobile-ul li:hover a {
-    color: #fff;
-}
-
-.mobile-ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ff9218;
-}
-/* End Mobile Header  */
-
-/* .top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2% 5% 0;
-    font-weight: 700 !important;
-    font-size: 16px !important;
-    border: var(--debug);
-} */
-
-.logo {
-    /* border: 1px solid red; */
+.logo-div {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-image: url("/images/contact-images/PricedOut___1.svg");
+    background-size: cover;
+    background-position: center;
+    width: 23.5%;
+    height: 170px;
+    position: relative;
+    left: .7%;
+    top: -25px;
 }
-
-/* .logo img {
-    border: 1px solid red;
-} */
 
 .navBar{
     display: flex;
     flex-flow: column;
     align-items:center;
     position: relative;
-    right: 14.8%;
-    top: 18%;
-    /* border: var(--debug); */
+    right: 11%;
+    top: -30px;
 }
 
 .navLinks li a {
@@ -123,19 +44,13 @@ body {
 }
 
 header {
-    position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    align-self:center;
     padding: 30px 0;
     margin: 0px;
     width: 100%;
-    height: 100px;
-    background: url(images/faq_page/pricedoutlogo.svg);
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: -35px;
+    /* height: 100px; */
     /* border: var(--debug); */
 }
 
@@ -235,44 +150,27 @@ padding: 0px 20px;
     }
 
     header {
-       display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
     }
 
-    .mobile-topbar {
-        /* border: var(--debug); */
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /* Mobile Logo  */
-    .mobile-logo {
-        /* border: var(--debug); */
-        display: block;
-        width: 70%;
-        margin: -6% 0 -20%;
+    .logo-div {
+        margin: 0;
+        padding: 0;
+        background-image: url("/images/contact-images/PricedOut___1.svg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
         position: relative;
-        left: 15%;
-    }
-
-    /* Hamburger Icon  */
-    #open {
-        display: block;
-        font-size: 1.5rem;
-        color: #FF9218;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        padding: 2.5% 3.5% 0;
-        cursor: pointer;
-    }
-
-    .mobile-header {
-        display: none;
+        top: 3%;
     }
 
     .navBar {
         width: 100%;
         padding: 0;
+        position: initial;
     }
 
     .navLinks {
@@ -289,7 +187,7 @@ padding: 0px 20px;
     }
 
     .navLinks li a {
-        font-size: 1rem;
+        font-size: 11px;
         width: 100%;
         margin: 0;
     }

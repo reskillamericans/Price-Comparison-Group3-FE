@@ -21,7 +21,7 @@ body{
 }
 .navLinks li a {
      font-size: 16px;
-     font-weight: normal;
+     font-weight: bold;
      color: #2D3047;
      text-decoration: none;
      font-family: "Open Sans", sans-serif;
@@ -230,9 +230,6 @@ a+a {
     font-size: 1.5rem;
     padding: 2%;
     text-align: center;
- }
- .login-form{
-     
  }
 
  .login-input{

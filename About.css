@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+html, body { 
+    overflow-x: hidden;
+}
+
+body { 
+    margin: 0; 
+    padding: 10px; 
+    background-color: #f4f0ed; 
+    position: relative;
+}
+
+.navBar{ 
+    display: flex; 
+    flex-flow: column; 
+    align-items: center;
+}
+
+.navLinks li a {
+     font-size: 16px; 
+     font-weight: normal; 
+     color: #2D3047; 
+     text-decoration: none; 
+     font-family: "Open Sans", sans-serif; 
+     position: relative;
+    }
+
+.navLinks li a:hover{ 
+    color: #FF9218;
+}
+
+header{ 
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin: auto; 
+    width: 95%; 
+    height: 167px; 
+    background: url(./images/landingpage-images/PricedOut2.svg); 
+    background-repeat: no-repeat; 
+    background-position-x: -61px; 
+    background-position-y: -110px;
+
+}
+
+.navLinks li{ 
+    display: inline-block; 
+    padding: 0px 20px;
+}
+
+
+a { 
+    font-size: 15px; 
+    color: inherit;
+}
+
+
+a:link { 
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none;
+}
+
+
+li a:hover { 
+    color: orange;
+}
+
+
+a+a { 
+    padding: 0em 1em 1em;
+}
+
+
+main { 
+    background-image: url("/images/aboutpage-images/bottomleft.svg"), url("/images/aboutpage-images/topright.svg"); 
+    background-position: left bottom, right top; 
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+.stripes { 
+    position: absolute; 
+    width: 2%; 
+    top: 0; 
+    display: flex;
+}
+
+.stripes img { 
+    margin: 0; 
+    padding: 0; 
+    height: 150px;
+}
+
+
+.bold { 
+    color: #FF9218; 
+    font-weight: 400;
+}
+
+
+h1 { 
+    font-weight: 300; 
+    font-family: 'Open Sans', sans-serif; 
+    color: #2D3047; 
+    font-size: 37px; 
+    margin: 0;
+}
+
+
+p { 
+    font-family: 'Open Sans', sans-serif; 
+    color: #797474; 
+    font-size: 16px; 
+}
+
+
+.p1, .p2, .p3 { 
+    margin-top: 40px;
+}
+
+
+.text2 {
+    margin-top: 1em;
+}
+
+.about { 
+    margin-left: 120px; 
+    margin-top: 30px;
+}
+
+
+.how { 
+    margin-left: 55%; 
+    margin-top: 5%;
+    padding-right: 20px;
+}
+
+
+.how img { 
+    float: left; 
+    margin-right: 30px; 
+    width: 30px; 
+    height: 50px;
+}
+
+
+.solo img { 
+    height: 400px; 
+    float: right;
+    /* margin-right: 50px; */
+}
+
+
+.duo img { 
+    width: 555px; 
+    height: 300px; 
+    float: left; 
+    /* margin-left: 100px; */
+}
+
+/* .how br {
+    display: none;
+} */
+
+footer { 
+    width: auto; 
+    height: 20vh; 
+    background-color: #2E3045; 
+    margin-top: 150px;
+}
+
+
+@media all and (max-width: 780px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    header {
+        flex-direction: column;
+        width: 560px;
+        height: 145px;
+        padding: 0;
+        background-position-x: 120px;
+        background-position-y: -70px;
+        background-size: 50%;
+    }
+    
+    .navBar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navLinks li {
+        padding: 0;
+        margin: 0 8px;
+    }
+
+    .navLinks li a {
+        font-size: 11px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .stripes img {
+        height: 100px;
+    }
+
+    .solo img {
+        height: 340px;
+    }
+
+    .duo img {
+        width: 505px;
+        height: 280px;
+    }
+
+    .how {
+        text-align: end;
+    }
+
+    .how br {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+html, body { 
+         overflow-x: hidden; 
+        }
+         
+body { 
+    padding: 0; 
+    margin: 0; 
+    position: relative; 
+}
+
+
+header { 
+    flex-direction: column; 
+    width: 560px; 
+    height: 145px; 
+    padding: 0; 
+    background-position-x: 40px; 
+    background-position-y: -70px; 
+    background-size: 50%; 
+} 
+    
+.navBar { 
+    width: 100%;
+    padding: 0; 
+}
+
+
+.navLinks { 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0; 
+    margin: 0; 
+    margin-right: 35%; 
+}
+
+.navLinks li { 
+    padding: 0; 
+    margin: 0 8px; 
+}
+
+
+.navLinks li a {
+     font-size: 11px; 
+     width: 100%; 
+     margin: 0; 
+    }
+
+.stripes img { 
+    height: 100px; 
+}
+
+main { 
+    flex-direction: column; 
+    background-size: 30%; 
+    background-position: left bottom, right top; 
+    width: 90%; 
+    padding: 20px; 
+}
+
+.about { 
+    margin: 0; 
+    text-align: center; 
+}
+
+.how { 
+    margin: 0; 
+    text-align: center; 
+}
+
+.solo {
+    text-align: center;
+}
+
+.solo img { 
+    width: 260px; 
+    height: 200px; 
+    margin: 0;
+    float: none;
+}
+
+.duo {
+    text-align: center;
+}
+
+.duo img {
+     width: 200px; 
+     height: 165px; 
+     margin: 0;
+     margin-right: 25px;
+     float: none;
+}
+
+.sign, .compare, .comment {
+    display: flex;
+}
+
+.text1 {
+    margin-top: 30px;
+}
+
+.text2 {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 31px;
+}
+
+.how p {
+    text-align: justify;
+}
+
+.p1, .p2, .p3 {
+    margin: 0;
+}
+
+footer {
+    margin: 0;
+}
+
+}
