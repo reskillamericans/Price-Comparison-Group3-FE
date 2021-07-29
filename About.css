@@ -6,7 +6,7 @@ html, body {
 
 body { 
     margin: 0; 
-    padding: 10px; 
+    padding: 0px; 
     background-color: #f4f0ed; 
     position: relative;
 }
@@ -129,7 +129,7 @@ p {
 }
 
 .about { 
-    margin-left: 120px; 
+    margin-left: 75px; 
     margin-top: 30px;
 }
 
@@ -231,12 +231,12 @@ footer {
     }
 
     .duo img {
-        width: 505px;
+        width: 400px;
         height: 280px;
     }
 
-    .how {
-        text-align: end;
+    .how p {
+        text-align: justify;
     }
 
     .how br {
@@ -266,7 +266,7 @@ header {
     background-position-y: -70px; 
     background-size: 50%; 
 } 
-    
+
 .navBar { 
     width: 100%;
     padding: 0; 
