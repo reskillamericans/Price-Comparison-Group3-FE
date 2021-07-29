@@ -4,8 +4,11 @@
 }
 
 body{
-    margin: 0;
-    background-color: #F9F9F9;
+    margin: 0; 
+    padding: 0px; 
+    background-color: #f4f0ed; 
+    position: relative;
+    
     padding-bottom: 100px;
 
     background-image: 
@@ -37,19 +40,9 @@ body{
 }
 
 header{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    margin: 0px;
-    width: 1500px; 
-    height: 200px;   
-
-    background: url(images/product_images/PricedOut.svg);
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: -100px;
+    position: relative; 
+    width: 100%; 
+    padding-bottom: 20px;
 } 
 
 header::before{
@@ -69,6 +62,20 @@ display: inline-block;
 padding: 0px 20px;
 }
 
+.gradient{
+    position: relative; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    margin: auto; 
+    width: 95%; 
+    height: 167px; 
+    background: url(./images/product_images/PricedOut.svg); 
+    background-repeat: no-repeat; 
+    background-position-x: -61px; 
+    background-position-y: -110px;
+}
+
 .wrapper{
     display: flex;
     flex-direction: row;
@@ -80,6 +87,14 @@ padding: 0px 20px;
       display: flex;
       flex-direction: column; 
       flex-wrap: wrap;
+      /* outline: 5px solid forestgreen;   */
+  }
+
+  .rowHeaders{
+      width: 150px;
+      justify-content: flex-start;
+      /* outline: 5px solid lightcoral; */
+
   }
 
 .iphone{
@@ -177,9 +192,7 @@ img{
 
 .iphone, .sneakers, .furniture,.jeanJacket,.duffle,.nintendo,.nikon{
     margin-top: 30px;
-
 }
-
 
 a{
     margin: 26.6px 0px;
@@ -196,145 +209,38 @@ a{
     background-position: top right;
 }
 
-/* Hamburger Icon  */
-#open {
-    display: none;
-}
-
-/* Mobile Header  */
-.mobile-header {
-   width: 100%;
-   height: 100vh;
-   position: fixed;
-   z-index: 99;
-   background: #FFF7F1;
-   top: 0;
-   display: none;
-}
-
-.mobile-header-exit {
-   position: absolute;
-   font-size: 2.5rem;
-   color: #ff9218;
-   right: 3%;
-   top: 1%;
-   transform: rotate(45deg);
-   cursor: pointer;
-}
-
-.mobile-nav {
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-
-.mobile-ul {
-   list-style: none;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-evenly;
-   height: 55vh;
-   width: 90%;
-}
-
-.mobile-ul li {
-   width: 100%;
-   text-align: center;
-   padding: 15px 0;
-   border-radius: 8px;
-}
-
-.mobile-ul li:hover {
-   background: #ff9218;
-}
-
-.mobile-ul li:hover a {
-   color: #fff;
-}
-
-.mobile-ul li a {
-   text-decoration: none;
-   text-transform: uppercase;
-   color: #ff9218;
-}
-/* End Mobile Header  */
-
-
-@media all and (min-width: 600px) {
-    .mobile-topbar, .mobile-header{
-        display: none;
-    }
-}
-
-    
-    
 @media all and (max-width: 600px) {
     body {
-        padding: 0;
-        margin: 0;
         background-image: none;
+        /* padding: 0;
+        margin: 0;
+        zoom: 80%; */
     }
 
-    header {
-        /* flex-direction: column;
+    header::before{
         width: 500px;
-        height: 25vh;
+    }
+    
+    
+    header{
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
         padding: 0;
-        margin-bottom: 60px;
-        background-position-x: 40px;
-        background-position-y: -100px;
-        background-size: auto; */
-
-        display: none;
-    }
-
-    .mobile-topbar {
-        /* border: var(--debug); */
-        display: flex;
-        justify-content: space-between;
-    }
-
-    /* Mobile Logo  */
-    .mobile-logo {
-        /* border: var(--debug); */
-        display: block;
-        width: 70%;
-        margin: -6% 0 -20%;
-        position: relative;
-        left: 15%;
-    }
-
-    /* Hamburger Icon  */
-    #open {
-        display: block;
-        font-size: 1.5rem;
-        color: #FF9218;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        padding: 2.5% 3.5% 0;
-        cursor: pointer;
-    }
-
-    /* .mobile-header {
-        display: none;
-    } */
-
-    nav{
-        position: absolute;
-        top: 150px;
-        right: 0px;
-    }
-
+        margin-bottom: 0;
+        background-position-y: -90px;
+        background-position-x: 30px;
+        background-size: cover;
+        /* border: 1px solid red;  */
+        }
     .navBar {
+        /* border: 1px solid red; */
         width: 100%;
         padding: 0;
+        margin-left: 60px;
     }
     .navLinks {
+        /* border: 1px solid red; */
         width: 100%;
         display: flex;
         align-items: center;
@@ -342,19 +248,20 @@ a{
         padding: 0;
     }
     .navLinks li {
+        /* border: 1px solid red; */
         padding: 0;
         margin: 0 8px;
+        font-size: 14px;
     }
     .navLinks li a {
-        font-size: 1rem;
+        /* border: 1px solid red; */
+        font-size: 11px;
         width: 100%;
         margin: 0;
     }
 
     .table1{
         position: fixed; 
-        margin-bottom: 0;
-        scroll-snap-type: mandatory;
     }
 
     .table2{
