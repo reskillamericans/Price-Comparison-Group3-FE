@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-:root {
-    --debug: 1px solid red;
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -20,55 +16,51 @@ body{
 .navBar{
     display: flex;
     flex-flow: column;
-    /* height : 210px; */
-    align-items:center;
-    /* border: var(--debug); */
+    align-items: center;
 }
-
-/* .navLinks {
-    border: var(--debug);
-} */
-
 .navLinks li a {
-    font-size: 16px;
-    font-weight: bold;
-    color: #2D3047;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    position: relative;
-}
+     font-size: 16px;
+     font-weight: bold;
+     color: #2D3047;
+     text-decoration: none;
+     font-family: "Open Sans", sans-serif;
+     position: relative;
+    }
 .navLinks li a:hover{
     color: #FF9218;
 }
 header{
-    /* border: var(--debug); */
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
-    margin: 0px;
-    max-width: 100%;
-    height: 100px;
-    background: url(images/contact-images/PricedOut___1.svg);
+    margin: auto;
+    width: 95%;
+    height: 167px;
+    background: url(./images/landingpage-images/PricedOut2.svg);
     background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: -120px;
-}
-header::before{
-    content: "";
-    background-image: linear-gradient(#FF9218, #F9F9F9);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 11%;
+    background-position-x: -61px;
+    background-position-y: -110px;
 }
 .navLinks li{
-display: inline-block;
-padding: 0px 20px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+a {
+    font-size: 15px;
+    color: inherit;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+li a:hover {
+    color: orange;
+}
+a+a {
+    padding: 0em 1em 1em;
 }
 .Main
 {
@@ -277,7 +269,7 @@ footer{
     cursor: pointer;
 }
 .sub button:hover{
-    background-color:hsl(32, 96%, 52%) ;
+    color:hsl(32, 96%, 52%) ;
 }
 .copyright{
     display: flex;
