@@ -195,7 +195,7 @@ padding: 0px 20px;
 
 
 /* Mobile Styles  */
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
     body {
         padding: 0;
         margin: 0;
