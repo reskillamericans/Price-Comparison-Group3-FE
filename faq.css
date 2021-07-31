@@ -141,6 +141,59 @@ padding: 0px 20px;
     display: none;
 }
 
+
+/* iPad Styles */
+@media all and (max-width: 770px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .logo-div {
+        margin: 0;
+        width: 60%;
+        position: relative;
+        top: 10px;
+    }
+
+    .navBar {
+        width: 98%;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+        top: 10px;
+        left: 0;
+        padding: 0;
+    }
+
+    .navLinks {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .navLinks li {
+        padding: 0;
+        margin: 0 auto 0 0;
+    }
+
+    .navLinks li a {
+        font-size: 1.3rem;
+    }
+
+    .faq-content {
+        width: 90%;
+    }
+
+    .faq-item h3 {
+        line-height: 2.3rem;
+    }
+}
+
+
 /* Mobile Styles  */
 @media all and (max-width: 600px) {
     body {
