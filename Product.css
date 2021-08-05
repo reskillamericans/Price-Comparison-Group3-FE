@@ -9,14 +9,14 @@ body{
     background-color: #f4f0ed; 
     position: relative;
     
-    padding-bottom: 100px;
+    padding-bottom: 5%;
 
     background-image: 
     url(images/product_images/EllipseTopLeft.svg),  
     url(images/product_images/EllipseBottom.svg);
     background-position: 
-        top 180px right 130px, 
-        bottom left 200px;
+        top 10% right 10%, 
+        bottom 2.5% left 10.5%;
     background-repeat: no-repeat;
 }
 
@@ -42,7 +42,7 @@ body{
 header{
     position: relative; 
     width: 100%; 
-    padding-bottom: 20px;
+    padding-bottom: 5%;
 } 
 
 header::before{
@@ -62,7 +62,7 @@ display: inline-block;
 padding: 0px 20px;
 }
 
-.gradient{
+.headerGradient{
     position: relative; 
     display: flex; 
     justify-content: flex-end; 
@@ -81,6 +81,8 @@ padding: 0px 20px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 90%;
+    position: ce;
 }
   
   .container, .rowHeaders{
@@ -209,6 +211,16 @@ a{
     background-position: top right;
 }
 
+@media  all and (max-width: 1000px) {
+    .container, .rowHeaders{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        /* outline: 5px solid forestgreen;   */
+    }
+    
+}
+
 @media all and (max-width: 600px) {
     body {
         background-image: none;
@@ -217,30 +229,32 @@ a{
         zoom: 80%; */
     }
 
-    header::before{
+    /* header::before{
         width: 500px;
-    }
-    
-    
-    header{
+    } */
+    header {
         flex-direction: column;
-        width: 100%;
-        height: 30vh;
+        width: 550px;
+        height: 25vh;
         padding: 0;
-        margin-bottom: 0;
-        background-position-y: -90px;
-        background-position-x: 30px;
-        background-size: cover;
-        /* border: 1px solid red;  */
-        }
+        margin-bottom: 60px;
+        background-position-x: 70px;
+        background-position-y: -100px;
+        background-size: auto;
+    }
+
+    nav{
+        position: absolute;
+        top: 150px;
+        right: 0px;
+    }
+
     .navBar {
-        /* border: 1px solid red; */
         width: 100%;
         padding: 0;
-        margin-left: 60px;
+        margin-top: 3%;
     }
     .navLinks {
-        /* border: 1px solid red; */
         width: 100%;
         display: flex;
         align-items: center;
@@ -248,17 +262,15 @@ a{
         padding: 0;
     }
     .navLinks li {
-        /* border: 1px solid red; */
         padding: 0;
         margin: 0 8px;
-        font-size: 14px;
     }
     .navLinks li a {
-        /* border: 1px solid red; */
-        font-size: 11px;
+        font-size: 1rem;
         width: 100%;
         margin: 0;
     }
+
 
     .table1{
         position: fixed; 

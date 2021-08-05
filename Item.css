@@ -54,7 +54,7 @@ display: inline-block;
 padding: 0px 20px;
 }
 
-.gradient{
+.headerGradient{
     position: relative; 
     display: flex; 
     justify-content: flex-end; 
@@ -119,6 +119,8 @@ padding: 0px 20px;
 
 .description { 
     grid-area: description; 
+    display: flex;
+    flex-direction: row;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -190,10 +192,6 @@ padding: 0px 20px;
     font-weight: bold;
 }
 
-.amazonButton { 
-    grid-area: amazonButton; 
-}
-
 .amazonButton button{ 
     font-style: normal;
     font-weight: 600;
@@ -215,27 +213,13 @@ padding: 0px 20px;
     margin-left: 80px;
 }
 
-.line1{
-    position: absolute;
-    width: 1000px;
-    height: 0px;
-    right: 200px;
-    top: 228px;
-
-    margin-top: 500px;
-
-    border: 1px solid #C4C4C4;
-    transform: rotate(90deg);
+.verticalLine{
+    margin-left: 3%;
 }
   
-.line2{
-    width: 445px;
-
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 50px;
-
-    border: 1px solid #C4C4C4;
+.horizontalLine{
+    margin-left: 7%;
+    margin-bottom: 10%;
 }
 
 footer{
@@ -259,7 +243,7 @@ footer{
 
 @media screen and (max-width: 1400px){
 
-    .line1{
+    .verticalLine{
         display: none;
     }
 
@@ -291,6 +275,7 @@ footer{
     .navBar {
         width: 100%;
         padding: 0;
+        margin-top: 3%;
     }
     .navLinks {
         width: 100%;
@@ -343,11 +328,7 @@ footer{
     .price{
         text-align: left;
     }
-
-    .line2{
-        width: 460px;
-    }
-
+    
     footer{
         display: none;
     }
