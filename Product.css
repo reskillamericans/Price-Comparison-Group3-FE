@@ -211,6 +211,16 @@ a{
     background-position: top right;
 }
 
+@media  all and (max-width: 1000px) {
+    .container, .rowHeaders{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        /* outline: 5px solid forestgreen;   */
+    }
+    
+}
+
 @media all and (max-width: 600px) {
     body {
         background-image: none;
