@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 body{
     margin: 0;
     padding: 0;
     background-color: #f4f0ed; 
     background-image:url(/images/contact-images/Group\ 70.png), url(/images/contact-images/Group\ 70.png),
-     url(/images/contact-images/Group\ 81.png), url(/images/contact-images/Group\ 82.png) ;
+    url(/images/contact-images/Group\ 81.png), url(/images/contact-images/Group\ 82.png) ;
     background-repeat: no-repeat;
     background-size: 8%, 8%, 9%,9%;
     background-position: 77% 22%, 18.5% 64%, 0% 68% , 100% 68%;
-
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Header and nav bar style*/
@@ -20,7 +20,7 @@ body{
 }
 .navLinks li a {
      font-size: 16px;
-     font-weight: bold;
+     font-weight: normal;
      color: #2D3047;
      text-decoration: none;
      font-family: "Open Sans", sans-serif;
@@ -216,7 +216,7 @@ footer{
 }
 .ft{
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     height: 85%;
     justify-content: flex-end;
 }
@@ -230,6 +230,7 @@ footer{
 .ft li{
     list-style-type: none;
     margin-bottom: 0.75rem;
+    
 }
 .ft a{
     text-decoration: none;
@@ -287,57 +288,136 @@ footer{
     margin-right: 1rem;
     color: white;
 }
+/*responsive*/
+@media (max-width: 780px){
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    body {
+        height: 1557px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    header {
+        flex-direction: column;
+        width: 560px;
+        height: 145px;
+        padding: 0;
+        background-position-x: 120px;
+        background-position-y: -70px;
+        background-size: 50%;
+    }
+    
+    .navBar {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navLinks li {
+        padding: 0;
+        margin: 0 8px;
+    }
+
+    .navLinks li a {
+        font-size: 11px;
+        width: 100%;
+        margin: 0;
+    }
+    .Main{
+        width: 90%;
+        height: 55vh;
+    }
+    .sub{
+        display: block;
+    }
+    
+    .subscribe button{
+        width: 160px;
+        margin-top: 1em;
+        padding: 10px;
+        }
+   
+    .email{
+
+        height: 60%;
+    }
+    .footer{
+        width: 60%;
+        font-size: 2.5vw;
+        margin: auto;
+        height: 38%;
+    }
+    
+    .ft {
+        height: 57%; 
+    }
+
+}
 
 @media all and (max-width: 600px) {
     body {
         /* border: 1px solid red; */
         padding: 0;
+        height: 200vh;
         margin: 0;
-        background-image:url(/images/register_images/Group\ 70.png), url(/images/register_images/Group\ 70.png),
-        url(/images/register_images/Group\ 81.png), url(/images/register_images/Group\ 82.png) ;
+        background-image:url(/images/contact-images/Group\ 81.png), url(/images/contact-images/Group\ 70.png),
+        url(/images/contact-images/Group\ 81.png), url(/images/contact-images/Group\ 82.png) ;
         background-repeat: no-repeat;
         background-size: 10%, 10%, 14%,14%;
         background-position: 48% 16%, 11% 66%, bottom left, bottom right;
    
         /* width: 100%; */
        }
-    .header1 {
-        flex-direction: column;
+       header { 
+        flex-direction: column; 
+        width: 560px; 
+        height: 145px; 
+        padding: 0; 
+        background-position-x: 40px; 
+        background-position-y: -70px; 
+        background-size: 50%; 
+    } 
+        
+    .navBar { 
         width: 100%;
-        height: 30vh;
-        padding: 0;
-        margin-bottom: 0;
-        background-position-y: -90px;
-        background-position-x: 5px;
-        background-size: cover;
-        /* border: 1px solid red;  */
-        }
-    .navBar {
-        /* border: 1px solid red; */
-        width: 100%;
-        padding: 0;
-     
+        padding: 0; 
     }
-    .navLinks {
-        /* border: 1px solid red; */
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
+    
+    
+    .navLinks { 
+        width: 100%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 0; 
+        margin: 0; 
+        margin-right: 35%; 
     }
-    .navLinks li {
-        /* border: 1px solid red; */
-        padding: 0;
-        margin: 0 8px;
-        font-size: 14px;
+    
+    .navLinks li { 
+        padding: 0; 
+        margin: 0 8px; 
     }
+    
+    
     .navLinks li a {
-        /* border: 1px solid red; */
-        font-size: 11px;
-        width: 100%;
-        margin: 0;
-    }
+         font-size: 11px; 
+         width: 100%; 
+         margin: 0; 
+        }
+    
     
     .Main{
         width: 90%;
@@ -381,12 +461,13 @@ footer{
      }
 
     .footer{
-        width: 50%;
+        width: 80%;
         font-size: 2.5vw;
         margin: auto;
     }
 
     .ft{
+        height: 80%;
         display: flex;
         flex-wrap:wrap;
         font-size: 2.5vw;
@@ -397,7 +478,7 @@ footer{
         margin-top: 0;
         margin-bottom: 1rem;
         text-decoration: 1px solid underline;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 600;
     }
     .ft li{
@@ -415,8 +496,9 @@ footer{
     }
     
     .subscribe button{
-        width: 100px;
+        width: 160px;
         margin-left: 2rem;
+        padding: 10px;
     }
    
     .email{
@@ -426,7 +508,7 @@ footer{
     }
 
     .floating_input1{
-        width: 100px;
+        /* width: 100px; */
         margin-left: 2rem;
     }
 }
