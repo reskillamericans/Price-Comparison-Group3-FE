@@ -126,13 +126,14 @@ padding: 0px 20px;
     font-size: 20px;
     line-height: 27px;
     color: #797474;
+    text-align: center;
     }
 
 .productName h1{ 
     grid-area: productName; 
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 24px;
     line-height: 87px;
     text-align: center;
     color: #FF9218;
@@ -162,9 +163,9 @@ padding: 0px 20px;
 
 .price{
     font-style: normal;
-    font-size: 37px;
+    font-size: 34px;
     line-height: 50px;
-    text-align: center;
+    margin-left: 120px;
     color: #797474;   
 }
 
@@ -210,7 +211,7 @@ padding: 0px 20px;
     border-radius: 10px;
 
     text-align: center;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .verticalLine{
